@@ -45,7 +45,7 @@ box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08), 0px 3px 6px rgba(0, 0, 0, 0.15);
 position: relative;
 display: inline-block;
 font-family: 'retro', sans-serif;
-font-size: 1.6em;
+font-size: 2.2em;
 font-weight: 300;
 margin: 0 0 30px 0;
 }
@@ -190,7 +190,7 @@ color: #74808a;
 margin: 0;
 padding-bottom: 30px;
 padding-right: 11em;
-font-size: 1.3em;
+font-size: 1.5em;
 }
 /* education Section */
 #education {
@@ -213,14 +213,14 @@ margin-bottom: 10px;
 border: 3px solid #c2c2c2
 }
 #education-timeline h3 {
-font-size: 1.5em;
+font-size: 2.0em;
 font-weight: 300;
 color: #374054;
 display: inline-block;
 margin: 0;
 }
 #education-timeline h4 {
-font-size: 1.2em;
+font-size: 1.5em;
 font-weight: 300;
 color: #7e8890;
 margin: 0 0 15px 0;
@@ -255,7 +255,7 @@ font-weight: 500;
 float: left;
 margin: 0;
 color: #374054;
-font-size: 1.6em;
+font-size: 1.8em;
 }
 .x-education-block span {
 color: #74808a;
@@ -266,17 +266,17 @@ color: #74808a;
 clear: both;
 font-weight: 500;
 margin: 0 0 15px 0;
-font-size: 1.3em;
+font-size: 1.5em;
 }
 .x-education-block p,.x-education-block ul {
 margin: 0;
 color: #74808a;
 font-size: inherit;
-font-size: 1.3em;
+font-size: 1.5em;
 }
 .x-education-block ul {
 padding: 0 0 0 15px;
-font-size: 1.3em;
+font-size: 1.5em;
 }
 /* projects Section */
 #projects {
