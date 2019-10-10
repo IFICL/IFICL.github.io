@@ -1,29 +1,226 @@
-<html>
-<!-- <head>
-    <link rel='stylesheet' type='text/css' href="styles.css">
-</head> -->
-<style>
-    p{margin:0 auto} 
-</style>
-
+<!--
+Tile: CZY's personal GitHub page 
+Author: Ziyang Chen  
+Cited from: Krishnakanth Alagiri (KK)
+Repo: https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite
+Description: This file contains all structure of my portfolio page
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Ziyang Chen | IFICL
+  </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="It is my perisonal website just for fun.">
+  <meta name="author" content="Ziyang Chen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/effects.css">
+  <link rel="stylesheet" href="assets/css/retro.css">
+</head>
 <body>
-    <div align="center"><img src="jcc.png" style="zoom:100%" /></div>
-   
-    <p style="font-size:1200%; text-align:center;"> 金粉世家期待你的加入 </p>
-    <!-- <p style = "font-size:1200%; text-align:center;"> 牛啊 </p> -->
-    <div align = "center"><img src = "tnl.gif" style = "zoom:500%" /></div>
-    <div align="center">
-    <marquee align = "center" direction="down" width="800" height="800" behavior="alternate" >
-        <marquee behavior="alternate">
-            <img src="3.jpg" style="zoom:260%" />
-        </marquee>
-    </marquee>
+  <section id="top" class="hero">
+    <div id="hero-overlay">
+      <section class="navigation">
+        <header>
+        </header>
+      </section>
+      <span id="to-top">
+        <div class="down-arrow floating-arrow">
+          <a href="#about">
+            <i class="fa fa-chevron-down" aria-hidden="true">
+            </i>
+          </a>
+        </div>
+        <div class="hero-text" id="fadein hero-overlay">
+          <h1>Ziyang Chen
+          </h1>
+          <h2>Keep it Real!
+          </h2>
+          <br>
+          <a href="Resume_for_intern.pdf" class="btn"> Download Resume
+          </a>
+          <br />
+          <br />
+          <div align="center"><img src="images/balls.png" style="zoom:30%" alt = "My photo" /></div>
+        </div>
+        </div>
+      </span>
+  </section>
+  <section id="about">
+    <h2 class="heading">About
+    </h2>
+    <p> I am a first-year graduate student at University of Michigan in Computer Vision. My primary research interest lies in Computer Vision and Algorithms. Considering to pursue a PhD in the future. 
+    </p>
+  </section>
+  <div id="education" class="background-alt">
+    <h2 class="heading">Educational Background
+    </h2>
+    <div id="education-timeline">
+      <div data-date="September 2010 – July 2015">
+        <h3>Lorem ipsum dolor sit
+        </h3>
+        <h4>Lorem ipsum dolor sit
+        </h4>
+      </div>
+      <div data-date="August 2015 – April 2017">
+        <h3>Lorem ipsum dolor sit
+        </h3>
+        <h4>Lorem ipsum dolor sit
+        </h4>
+      </div>
     </div>
-    <marquee behavior="alternate">
-        <img src="1.jpg" style="zoom:50%" />
-        <img src="3.jpg" style="zoom:260%" />
-        <img src="2.jpg" style="zoom:108%" />    
-    </marquee>
-</body>
-
-</html>
+  </div>
+  <div id="x-education">
+    <h2 class="heading">Extras
+    </h2>
+    <div class="x-education-block shadow">
+      <h3>Lorem ipsum dolor sit
+      </h3>
+      <span class="x-education-date">Augest 2017 - March 2018
+      </span>
+      <h4>Lorem ipsum dolor sit
+      </h4>
+    </div>
+    <div class="x-education-block shadow">
+      <h3>Lorem ipsum dolor sit
+      </h3>
+      <span class="x-education-date">June 2017 - July 2017
+      </span>
+      <h4>Lorem ipsum dolor sit
+      </h4>
+    </div>
+  </div>
+  <div id="projects" class="background-alt">
+    <h2 class="heading">Projects
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="Lorem ipsum dolor sit" />
+          </div>
+          <div class="project-info">
+            <h3>Lorem ipsum dolor sit
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus velit eget nibh mollis interdum. Ut iaculis, velit sit amet aliquam hendrerit, sem ex elementum odio, vel dignissim lorem leo sit amet erat. Donec tempor nisi nec magna mollis, vel blandit velit tristique. Suspendisse sed purus vitae enim venenatis viverra id ut nisl. Sed at mauris maximus, gravida orci nec, consectetur velit. Duis congue ex sed felis varius, non pretium lectus laoreet. Integer cursus cursus leo, ut vulputate ante mattis in. Sed tristique consectetur est vitae consequat. Aenean id eros dolor.
+            </p>
+            <a href="#">View Project
+            </a>
+          </div>
+        </div>
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="Lorem ipsum dolor sit" />
+          </div>
+          <div class="project-info">
+            <h3>Lorem ipsum dolor sit
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus velit eget nibh mollis interdum. Ut iaculis, velit sit amet aliquam hendrerit, sem ex elementum odio, vel dignissim lorem leo sit amet erat. Donec tempor nisi nec magna mollis, vel blandit velit tristique. Suspendisse sed purus vitae enim venenatis viverra id ut nisl. Sed at mauris maximus, gravida orci nec, consectetur velit. Duis congue ex sed felis varius, non pretium lectus laoreet. Integer cursus cursus leo, ut vulputate ante mattis in. Sed tristique consectetur est vitae consequat. Aenean id eros dolor.
+            </p>
+            <a href="#">View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills">
+    <h2 class="heading">Programming Proficiency
+    </h2>
+    <ul>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+    </ul>
+  </div>
+  <div id="skills" class="background-alt">
+    <h2 class="heading">Technological Proficiency
+    </h2>
+    <ul>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+      <li>Lorem
+      </li>
+    </ul>
+  </div>
+  <div id="contact-me">
+    <div id="contact-me-overlay">
+      <h2 class="heading">Get in Touch
+      </h2>
+      <div id="contact-me-form">
+        <form method="POST" action="about_blank">
+          <input type="hidden" name="_subject" value="Contact request from personal website" />
+          <input type="email" class="shadow" name="_replyto" placeholder="Your email" required>
+          <textarea name="message" class="shadow" placeholder="Your message go here" required>
+          </textarea>
+          <button class="btn" type="submit">Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    </span>
+  <div class="mobile">
+    <p>
+      Made with
+      <a href="https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite">
+        <span class="fa fa-heart love">
+          </a>
+        </span> by Krishnakanth Alagiri (KK)
+    </p>
+    <div class="social-mob">
+      <a href="https://github.com/" target="_blank">
+        <img src="assets\img\icons\GitHub.png" alt="Your_Name - GitHub">
+      </a>
+      <a href="https://linkedin.com/" target="_blank">
+        <img src="assets\img\icons\LinkedIn.png" alt="Your_Name - LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="assets\img\icons\Instagram.png" alt="Your_Name - Instagram">
+      </a>
+      <a href="mailto:yourmail@gmail.com" target="_blank">
+        <img src="assets\img\icons\Mail.png" alt="Your_Name - Mail">
+        </div>
+    </div>
+    <span id="to-top">
+      <div class="up-arrow floating-arrow">
+        <a href="#top">
+          <i class="fa fa-chevron-up" aria-hidden="true">
+          </i>
+        </a>
+      </div>
+      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    </body>
+  </html>
