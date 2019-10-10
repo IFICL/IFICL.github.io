@@ -483,9 +483,10 @@ padding: 10px;
 display: inline-block;
 }
 .social-mob img{
-width: 1.8em;
-height: 1.8em;
-padding-right: 16px;
+width: 2.0em;
+height: 2.0em;
+padding-right: 10px;
+padding-left: 20px;
 }
 .social-mob a{
 color: #FFFFFF;
