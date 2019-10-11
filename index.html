@@ -2,7 +2,6 @@
 Tile: CZY's personal GitHub page 
 Author: Ziyang Chen  
 Cited from: Krishnakanth Alagiri (KK)
-Repo: https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite
 Description: This file contains all structure of my portfolio page
 -->
 <!DOCTYPE html>
@@ -54,7 +53,31 @@ Description: This file contains all structure of my portfolio page
     <p> I am a first-year graduate student at University of Michigan in Computer Vision. My primary research interest lies in Computer Vision and Algorithms. 
       <!-- Considering to pursue a PhD in the future.  -->
     </p>
-    <div align="center"><img src="images/go.gif" style="zoom:100%" alt="pic1" /></div>
+    <!-- <div align="center"><img id='mypic' src="images/go.gif"
+        onmouseover="this.src = 'images/self.jpg'; this.style = 'zoom:3%'"
+        onmouseout="this.src = 'images/go.gif'; this.style = 'zoom:100%'" />
+    </div> -->
+
+    <div align="center"><img id = 'mypic' src="images/go.gif" onclick = "mynext()" />
+      <script>
+        var flag = 0;
+        function mynext() {
+          
+          var img = document.getElementById('mypic');
+          img.blur();
+          if (flag == 0) {
+            img.src = "images/self.jpg";
+            img.style = "zoom:3%";
+            flag = 1;
+          }
+          else {
+            img.src = "images/go.gif";
+            img.style = "zoom:80%";
+            flag = 0;
+          }
+        }
+      </script>
+    </div>
   </section>
   <div id="education" class="background-alt">
     <h2 class="heading">Educational Background
