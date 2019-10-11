@@ -75,8 +75,8 @@ margin-right: 2.6rem;
 box-shadow: 0 0 0 black;
 transition: all 0.2s;
 padding-top: 10px;
-position:absolute;
-left: 26.5%
+/* position:absolute;
+left: 26.5% */
 }
 .btn:last-child {
 margin: 0;
