@@ -15,6 +15,10 @@ src: url("../../libs/fonts/Pixel-Miners.otf") format("opentype");
 font-family: "retro1";
 src: url("../../libs/fonts/dpcomic.ttf") format("truetype");
 }
+@font-face {
+font-family: "myfont";
+src: url("../../libs/fonts/EXEPixelPerfect.ttf") format("truetype");
+}
 html {
 scroll-behavior: smooth;
 font-size: 18px;
@@ -45,7 +49,7 @@ box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08), 0px 3px 6px rgba(0, 0, 0, 0.15);
 position: relative;
 display: inline-block;
 font-family: 'retro', sans-serif;
-font-size: 2.2em;
+font-size: 2.0em;
 font-weight: 300;
 margin: 0 0 30px 0;
 }
@@ -186,14 +190,16 @@ position: relative;
 padding-left: 15px;
 padding-right: 15px;
 min-height: 1px;
-font-size: 1.6em;
+font-size: 2.0em;
 }
 #about p {
 color: #74808a;
 margin: 0;
 padding-bottom: 30px;
 padding-right: 11em;
-font-size: 1.5em;
+font-size: 2.0em;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 /* education Section */
 #education {
@@ -216,21 +222,27 @@ margin-bottom: 10px;
 border: 3px solid #c2c2c2
 }
 #education-timeline h3 {
-font-size: 2.0em;
+font-size: 3.0em;
 font-weight: 300;
 color: #374054;
 display: inline-block;
 margin: 0;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 #education-timeline h4 {
-font-size: 1.5em;
+font-size: 1.8em;
 font-weight: 300;
 color: #7e8890;
 margin: 0 0 15px 0;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 #education-timeline p {
 color: #74808a;
-font-size: 0.9em;
+font-size: 1.6em;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 margin: 0;
 }
 #education-timeline:before,#education-timeline:after {
@@ -247,7 +259,7 @@ color: #374054;
 margin-bottom: 50px;
 }
 .x-education-block {
-max-width: 700px;
+max-width: 900px;
 margin: 0 auto 30px auto;
 padding: 15px;
 border: 3px solid #dcd9d9;
@@ -258,18 +270,25 @@ font-weight: 500;
 float: left;
 margin: 0;
 color: #374054;
-font-size: 1.8em;
+font-size: 2.4em;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 .x-education-block span {
 color: #74808a;
 float: right;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
+font-size: 1.6em;
 }
 .x-education-block h4 {
 color: #74808a;
 clear: both;
 font-weight: 500;
 margin: 0 0 15px 0;
-font-size: 1.5em;
+font-size: 1.8em;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 .x-education-block p,.x-education-block ul {
 margin: 0;
@@ -324,18 +343,22 @@ position: absolute;
 top: 50%;
 transform: translateY(-50%);
 margin-left: 300px;
-padding: 15px
+padding: 15px;
 }
 .project-info h3 {
-font-size: 1.6em;
+font-size: 2.2em;
 font-weight: 300;
 color: #374054;
 margin: 0 0 15px 0;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 .project-info p {
 color: #74808a;
 margin: 0 0 15px 0;
-font-size: 1.3em;
+font-size: 1.6em;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 #more-projects {
 display: none;
@@ -362,8 +385,10 @@ padding: 5px 10px;
 color: #374054;
 background: #e4e4ea;
 list-style: none;
-font-size: 1.3em;
+font-size: 1.6em;
 border: 3px solid #868687;
+/* Delete this parameter and the font will restored. */
+font-family: myfont;
 }
 /* contact Section */
 #contact-me {
