@@ -1,0 +1,206 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<html>
+<head>
+    <title>Cycle-Consistent Audio-Visual Grouping</title>
+    <meta property="og:image" content=images/teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+    <meta property="og:title" content="Cycle-Consistent Audio-Visual Grouping" />
+    <meta property="og:description" content="Z. Chen, X. Hu, A. Owens. CVPR 2021" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- webpage template-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- model-viewer css -->
+    <link rel="stylesheet" href="assets/css/demo-style.css">
+
+    <!-- Get from Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=""></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-75863369-6');
+    </script>
+</head>
+
+<body>
+    <br>
+    <!-- <center> -->
+    <center>
+        <span style="font-size:38px">Cycle-Consistent Audio-Visual Grouping</span>
+    </center>
+    <br><br>
+    <table align=center width=700px>
+        <tr>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"><a href="https://ificl.github.io/">Ziyang Chen</a>*</span>
+                </center>
+            </td>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"><a href="https://xixity.github.io/">Xixi Hu</a>*</span>
+                </center>
+            </td>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"><a href="http://andrewowens.com/">Andrew Owens</a></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table align=center width=700px>
+        <tr>
+            <td align=center width=200px>
+                <center>
+                    <span style="font-size:20px">University of Michigan</span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table align=center width=700px>
+        <tr>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px">Submitted to CVPR 2021</span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table align=center width=600px>
+        <tr>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"><a href="#">[pdf]</a></span>
+                </center>
+            </td>
+            <td align=center width=300px>
+                <center>
+                    <span style="font-size:20px"><a href="#">[code] (coming soon)</a></span>
+                </center>
+            </td>
+            <td align=center width=200px>
+                <center>
+                    <span style="font-size:20px"><a href="#">[1-min overview]</a></span>
+                </center>
+            </td>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"><a href="#">[video]</a></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table align=center width=700px>
+        <tr>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <table align=center width=1000px>
+        <tr>
+            <td width=00px>
+                <center>
+                    <img src="images/method.png" width="950px"></img><br>
+                </center>
+            </td>
+        </tr>
+        <tr>
+        <td width=600px>
+            <center>
+                <span style="font-size:14px"><i> <b>Cycle-consistent grouping</b>. Our model learns to associate image patches with sound using a grouping method based on cycle-consistent random walks. We show our proposed audio-visual random walk above. A walk starts from a patch in the left. It travels to another image patch node, then visits an audio node following directed edges and finally reach a patch in the most right.</i> 
+                <!-- Here, we show sound source segmentation probabilities from our models, which have been trained on human speech and musical instruments datasets, respectively. -->
+            </center>
+        </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table align=center width=1000px>
+        <center><h1>Abstract</h1></center>
+        <tr>
+            <td>
+                In this paper, we address the problem of learning to group image patches into sound sources, using supervision provided only from raw audio-visual data. For this, we propose a method based on <a href="https://ajabri.github.io/videowalk/">contrastive random walks</a>. We train a random walker to move along a graph whose nodes correspond to image patches and audio examples. The model is constrained to learn a cycle-consistency walk: associations that it learns should allow it to return to an image patch after transitioning across modalities to audio. The probability of the walker visiting a pair of examples on this walk then indicates the degree of similarity between them. We evaluate our method on human speech and musical instruments datasets. Experimental results show that, in comparison to other self-supervised and weakly supervised localization approaches, our model obtains significantly more complete segmentations, and learns a more effective measure of visual similarity.
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+
+
+    <table align=center width=1000px>
+        <center>
+            <h1>Grouping Results</h1>
+        </center>
+        <tr>
+            <td width=00px>
+                <center>
+                    <img src="images/teaser.png" width="1000px"></img><br>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td width=00px>
+                <center>
+                    <img src="images/teaser.png" width="1000px"></img><br>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+
+    <table align=center width=800px>
+        <center><h1>Paper and Supplementary Material</h1></center>
+        <tr>
+            <td><a href=""><img class="layered-paper-big" style="height:175px" src="./images/paper.png"/></a></td>
+            <td><span style="font-size:14pt">Ziyang Chen*, Xixi Hu*, Andrew Owens.<br>
+                <b>Cycle-Consistent Audio-Visual Grouping.</b><br>
+                CVPR 2021, Under Review.<br>
+                (hosted on <a href="#">ArXiv</a>)<br>
+                <!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+                <span style="font-size:4pt"><a href=""><br></a>
+                </span>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <table align=center width=600px>
+        <tr>
+            <td><span style="font-size:14pt"><center>
+                <a href="./docs/bibtex.txt">[Bibtex]</a>
+            </center></td>
+        </tr>
+    </table>
+
+    <hr>
+    <br>
+
+    <table align=center width=900px>
+        <tr>
+            <td width=400px>
+                <left>
+                    <center><h1>Acknowledgements</h1></center>
+                    This webpage template was borrowed from <a href="https://jasonqsy.github.io/Associative3D/">Shengyi Qian</a>, which
+                    originally come from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+                </left>
+            </td>
+        </tr>
+    </table>
+
+<br>
+</body>
+</html>
+
