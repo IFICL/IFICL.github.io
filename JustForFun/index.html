@@ -1,0 +1,295 @@
+﻿<!--
+Tile: CZY's personal GitHub page 
+Author: Ziyang Chen  
+Cited from: Krishnakanth Alagiri (KK)
+Description: This file contains all structure of my portfolio page
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Ziyang Chen | IFICL
+  </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="It is my perisonal website just for fun.">
+  <meta name="author" content="Ziyang Chen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/effects.css">
+  <link rel="stylesheet" href="assets/css/retro.css">
+</head>
+<body>
+  <section id="top" class="hero">
+    <div id="hero-overlay">
+      <section class="navigation">
+        <header>
+        </header>
+      </section>
+      <span id="to-top">
+        <div class="down-arrow floating-arrow">
+          <a href="#about">
+            <i class="fa fa-chevron-down" aria-hidden="true">
+            </i>
+          </a>
+        </div>
+        <div class="hero-text" id="fadein hero-overlay">
+          <h1>Ziyang Chen
+          </h1>
+          <h2>Keep it Real!
+          </h2>
+          <br>
+          <div align="center"><a href="../docs/CV-Ziyang_Chen.pdf" class="btn"> Download Resume
+          </a></div>
+          <div align="center"><img src="images/balls.png" style="zoom:30%" alt = "pic" /></div>
+        </div>
+        </div>
+      </span>
+  </section>
+  <section id="about">
+    <h2 class="heading">About
+    </h2>
+    <p> I am a first-year graduate student at University of Michigan in Computer Vision. My primary research interest lies in Computer Vision and Algorithms. Considering to pursue a PhD in the future.
+    </p>
+    <!-- <div align="center"><img id='mypic' src="images/go.gif"
+        onmouseover="this.src = 'images/self.jpg'; this.style = 'zoom:3%'"
+        onmouseout="this.src = 'images/go.gif'; this.style = 'zoom:100%'" />
+    </div> -->
+
+    <div align="center"><img id = 'mypic' src="images/go.gif" onclick = "mynext()" />
+      <script>
+        var flag = 0;
+        function mynext() {
+          
+          var img = document.getElementById('mypic');
+          img.blur();
+          if (flag == 0) {
+            img.src = "../images/self.jpg";
+            img.style = "zoom:3%";
+            flag = 1;
+          }
+          else {
+            img.src = "images/go.gif";
+            img.style = "zoom:80%";
+            flag = 0;
+          }
+        }
+      </script>
+    </div>
+  </section>
+  <div id="education" class="background-alt">
+    <h2 class="heading">Educational Background
+    </h2>
+    <div id="education-timeline">
+      <div data-date="September 2019 – Current">
+        <h3> University of Michigan - Ann Arbor
+        </h3>
+        <h4> Master of Science in Engineering: Computer Vision
+        </h4>
+        <p>
+          Expect: September 2019 - May 2021
+        </p> 
+      </div>
+      <div data-date="September 2015 – August 2019">
+        <h3> Shanghai Jiao Tong University - Shanghai, CN
+        </h3>
+
+        <h4>Bachelor of Science in Engineering: Electrical And Computer Engineering
+        </br>
+          (Minor in Entrepreneurship)
+        </h4>
+        <p>
+          September 2015 - August 2019
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="x-education">
+    <h2 class="heading">Extra Experience
+    </h2>
+    <div class="x-education-block shadow">
+      <h3>Research Assistant - Owens AI Lab, University Of Michigan
+      </h3>
+      <span class="x-education-date">January 2020 - Current
+      </span>
+      <h4> Research Topic: Sound Localization and Navigation
+      </h4>
+    </div>
+    <div class="x-education-block shadow">
+      <h3>Research Assistant - Cong Shi's IOE Lab, University Of Michigan
+      </h3>
+      <span class="x-education-date">September 2019 - January 2020
+      </span>
+      <h4> Research Topic: Construction about Online Matching Algorithm in a special case
+      </h4>
+    </div>
+    <div class="x-education-block shadow">
+      <h3>Teaching Assistant, UM-SJTU
+      </h3>
+      <span class="x-education-date">September 2018 - August 2019
+      </span>
+      <h4>Course: VE312 <I>Digital Integrated Circuits</I> & VE311 <I>Electronic Circuits </I>
+      </h4>
+    </div>
+    <div class="x-education-block shadow">
+      <h3>Software Development Engineer Intern, Freesense Image Inc
+      </h3>
+      <span class="x-education-date">March 2018 - May 2018
+      </span>
+      <h4>Implemented an auxiliary system based on Deep Learning and Faster-RCNN that detects and classifies the objects on the LCD screen and improved the accuracy on large-scale datasets
+      </h4>
+    </div>
+  </div>
+  <div id="projects" class="background-alt">
+    <h2 class="heading">Projects
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="../images/capstone.png" style="zoom:22%; padding-top: 100px; padding-bottom: 100px;" alt="Capstone" />
+          </div>
+          <div class="project-info">
+            <h3>Design of Evaluative System for Online Car Hiring Service
+            </h3>
+            <p>Design a new evaluation system with UI which can capture opinions from customers' comments based on NLP and aspect level sentiment analysis by applying China-Word-Vector & Recurrent Attention Network.
+            </p>
+            <a href="https://github.com/IFICL/VE450-Final-Project">View Project
+            </a>
+          </div>
+        </div>
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="../images/VG101.png" style="zoom:32%; padding-top: 100px; padding-bottom: 100px; padding-left: 200px;" alt="VG101" />
+          </div>
+          <div class="project-info">
+            <h3>Driver's Alarming System in Vehicle
+            </h3>
+            <p>Built a device which can send alarm to driver when he is sleepy by capturing picture and then detecting whether the driver's eyes are closed or not. Assembled device in a Raspberry Pi by running Python code with OpenCV. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills">
+    <h2 class="heading">Programming Proficiency
+    </h2>
+    <ul>
+      <li>C
+      </li>
+      <li>C++
+      </li>
+      <li>PYTHON
+      </li>
+      <li>MATLAB
+      </li>
+      <li> R language
+      </li>
+      <li> Julia
+      </li>
+      <li> HTML/CSS
+      </li>
+      <li> JavaScript
+    </ul>
+  </div>
+  <div id="skills" class="background-alt">
+    <h2 class="heading">Technological Proficiency
+    </h2>
+    <ul>
+      <li> TensorFlow
+      </li>
+      <li> Pytorch
+      </li>
+      <li> Deep Learning
+      </li>
+      <li> Office 365
+      </li>
+      <li> Latex
+      </li>
+      <li> AutoCAD
+      </li>
+      <li> Cadence
+      </li>
+      <li> Respberry Pi
+      </li>
+    </ul>
+  </div>
+  <!-- <div id="contact-me">
+    <div id="contact-me-overlay">
+      <h2 class="heading">Get in Touch
+      </h2>
+      <div id="contact-me-form">
+        <form method="POST" action="about_blank">
+          <input type="hidden" name="_subject" value="Contact request from personal website" />
+          <input type="email" class="shadow" name="_replyto" placeholder="Your email" required>
+          <textarea name="message" class="shadow" placeholder="Your message go here" required>
+          </textarea>
+          <button class="btn" type="submit">Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+  <div id="x-education">
+    <h2 class="heading"> Misc
+    </h2>
+    <div class="x-education-block shadow" style ="text-align: center">
+      <!-- <h3>Lorem ipsum dolor sit
+      </h3> -->
+      <script>
+        var sites = [
+            'https://jasonqsy.github.io/',
+            'https://c-t-a.me/#',
+            'https://carolzxyzxy.github.io/',
+            'https://yangych29.github.io/index.html',
+            'https://w-yi.github.io/',
+            'https://jinlinyi.github.io'
+        ];
+      
+        function randomSite() {
+            var i = parseInt(Math.random() * sites.length);
+            location.href = sites[i];
+        }
+      </script>
+      <h4>I have many genius friends and <a href='#' onclick="randomSite();"><b>this Link</b></a> will redirect you to one of them.
+      </h4>
+      <div align="center"><img src="images/mohuan.png" style="zoom:30%" alt="pic" /></div>
+    </div>
+    
+  </div>
+  <footer>
+    </span>
+  <div class="mobile">
+    <p>
+        <span class="fa fa-heart love">
+          </a>
+        </span> Social Media
+    </p>
+    <div class="social-mob">
+      <a href="https://github.com/IFICL" target="_blank">
+        <img src="assets/img/icons/GitHub.png" alt="IFICL - GitHub">
+      </a>
+      <a href="https://linkedin.com/" target="_blank">
+        <img src="assets/img/icons/LinkedIn.png" alt="Ziyang Chen - LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="assets/img/icons/Instagram.png" alt="Ziyang Chen - Instagram">
+      </a>
+      <a href="mailto:czyang@umich.edu" target="_blank">
+        <img src="assets/img/icons/Mail.png" alt="Ziyang Chen - Mail">
+        </div>
+    </div>
+    <span id="to-top">
+      <div class="up-arrow floating-arrow">
+        <a href="#top">
+          <i class="fa fa-chevron-up" aria-hidden="true">
+          </i>
+        </a>
+      </div>
+      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    </body>
+  </html>
