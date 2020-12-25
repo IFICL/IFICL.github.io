@@ -34,6 +34,7 @@ body {
 }
 
 ol, ul {
+	/* overflow: auto; */
 	list-style: none;
 }
 
@@ -85,7 +86,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 248px;
 		}
 
 	}
@@ -2278,6 +2279,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		flex-wrap: wrap;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -2286,7 +2288,9 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1em;
-			vertical-align: middle;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			vertical-align: middle;			
 		}
 
 		ul.actions.special {
@@ -3752,6 +3756,7 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		padding-top: 3.25em;
+		/* width: 100%; */
 	}
 
 		#wrapper.is-transitioning {
