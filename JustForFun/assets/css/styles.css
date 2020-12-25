@@ -202,6 +202,7 @@ font-size: 2.0em;
 font-family: myfont;
 }
 #about img{
+    display: block;
     cursor: pointer;
     transition: all 0.6s;
 }
@@ -209,6 +210,14 @@ font-family: myfont;
     transform: scale(1.2);
 }
 
+#mypic {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#mypic :hover{
+    transform: scale(1.2);
+}
 /* education Section */
 #education {
 padding: 50px 15px;
