@@ -39,9 +39,9 @@ ul li {
 h2 {
   font-size: 26px;
 }
-a:link {
-  color: rgba(3, 64, 92, 0.8);
-}
+/* a:link {
+  color: rgb(3, 64, 92);
+} */
 a:hover {
   text-decoration: underline;
 }
