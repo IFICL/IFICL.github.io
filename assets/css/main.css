@@ -97,7 +97,7 @@ a:hover {
   margin-top: 32px;
 }
 .navbar-header .navbar-brand {
-  padding: 10px 0;
+  padding: 13px 0;
 }
 .navbar-header .navbar-brand a {
   height: auto;
@@ -128,7 +128,7 @@ a:hover {
   background: transparent;
 }
 #top-bar.animated-header {
-  padding: 20px 0;
+  padding: 0px 0;
   background: #ffffff;
   box-shadow: none;
 }
@@ -270,7 +270,7 @@ a:hover {
 }
 .block p {
   color: #000000;
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 28px;
   margin-bottom: 10px;
 }
