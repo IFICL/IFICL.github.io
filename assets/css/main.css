@@ -1743,3 +1743,131 @@ article {
   font-size: 14px !important;
   line-height: 1.7 !important;
 }
+
+/* News: a quiet timeline that keeps short updates easy to scan */
+.news-section {
+  margin-top: -100px;
+}
+
+.news-section .block {
+  padding-top: 10px;
+}
+
+.news-section .block h2 {
+  margin-top: 0;
+}
+
+.news-timeline {
+  position: relative;
+  max-width: 760px;
+  max-height: 131px;
+  margin: 0 auto;
+  padding: 2px 16px 0 24px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(0, 49, 87, 0.22) transparent;
+  scrollbar-width: thin;
+  list-style: none;
+}
+
+.news-timeline:focus-visible {
+  border-radius: 5px;
+  outline: 2px solid rgba(0, 164, 186, 0.65);
+  outline-offset: 6px;
+}
+
+.news-timeline::-webkit-scrollbar {
+  width: 5px;
+}
+
+.news-timeline::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-timeline::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(0, 49, 87, 0.22);
+}
+
+.news-timeline::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 164, 186, 0.5);
+}
+
+.news-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 16px;
+  padding: 0 0 18px 4px;
+  color: #26343c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 360;
+  line-height: 1.65;
+}
+
+.news-item::before {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: -18px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  content: '';
+  background: #91a3ae;
+  box-shadow: 0 0 0 1px rgba(0, 49, 87, 0.2);
+}
+
+.news-item:not(:last-child)::after {
+  position: absolute;
+  top: 17px;
+  bottom: -8px;
+  left: -14px;
+  width: 1px;
+  content: '';
+  background: rgba(0, 49, 87, 0.16);
+}
+
+.news-item:last-child {
+  padding-bottom: 0;
+}
+
+.news-item time {
+  color: #667985;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.news-latest::before {
+  background: #00a4ba;
+  box-shadow: 0 0 0 3px rgba(0, 164, 186, 0.12);
+}
+
+.news-latest time {
+  color: #00899b;
+}
+
+@media (max-width: 767px) {
+  .news-timeline {
+    max-height: 208px;
+    padding-left: 21px;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 1px;
+    padding-left: 5px;
+  }
+
+  .news-item::before {
+    left: -15px;
+  }
+
+  .news-item:not(:last-child)::after {
+    left: -11px;
+  }
+}
