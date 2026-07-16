@@ -241,66 +241,108 @@
                 </div>
             </div>
             
-            <div class="row work-item">
-                <div class="block wow fadeInLeft work-entry" data-wow-delay=".2s" data-wow-duration="400ms">
-                    <div class="col-md-3 col-sm-3 text-center">
-                        <a href="https://lumalabs.ai/"><img src="./images/work/luma.png" alt=""
-                                class="logo-thumb"></a>
+            <div class="row">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="work-tabs" role="tablist" aria-label="Employers">
+                        <button class="work-tab active" role="tab" aria-selected="true" aria-controls="work-luma" id="tab-luma" data-i="0" tabindex="0">
+                            <img src="./images/work/luma.png" alt="Luma AI">
+                            <span>Luma AI</span>
+                        </button>
+                        <button class="work-tab" role="tab" aria-selected="false" aria-controls="work-adobe" id="tab-adobe" data-i="1" tabindex="-1">
+                            <img src="./images/work/adobe-icon.png" alt="Adobe Research">
+                            <span>Adobe Research</span>
+                        </button>
+                        <button class="work-tab" role="tab" aria-selected="false" aria-controls="work-meta" id="tab-meta" data-i="2" tabindex="-1">
+                            <img src="./images/work/reality_lab.png" alt="Meta">
+                            <span>Meta</span>
+                        </button>
                     </div>
-                    <div class="col-md-7 col-sm-8">
-                        <p class="work-company"><span class="mybold">Luma AI</span></p>
-                        <div class="role-line">
-                            <span class="job-title">Research Scientist Lead</span>
-                            <span class="role-date">Jan. 2026 ~ Now</span>
-                        </div>
-                        <div class="role-line">
-                            <span class="job-title">Research Scientist</span>
-                            <span class="role-date">June 2025 ~ Jan. 2026</span>
-                        </div>
-                        <p class="work-detail">Topic: Multi-modal Generative Models (<a href="https://lumalabs.ai/news/ray3_14">Ray3.14</a>, <a href="https://lumalabs.ai/uni-1">Uni-1</a>)</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row work-item">
-                <div class="block wow fadeInLeft work-entry" data-wow-delay=".2s" data-wow-duration="400ms">
-                    <div class="col-md-3 col-sm-3 text-center">
-                        <a href="https://research.adobe.com/"><img src="./images/work/adobe-icon.png" alt=""
-                                class="logo-thumb"></a>
-                    </div>
-                    <div class="col-md-7 col-sm-8">
-                        <p class="work-company"><span class="mybold">Adobe Research</span></p>
-                        <div class="role-line">
-                            <span class="job-title">Research Scientist Intern</span>
-                            <span class="role-date">May 2024 ~ Nov. 2024</span>
+                    <div class="work-panels">
+                        <div class="work-panel active" role="tabpanel" id="work-luma" aria-labelledby="tab-luma" data-i="0">
+                            <div class="work-panel-header">
+                                <div>
+                                    <p class="work-eyebrow">Industry · Multimodal AI</p>
+                                    <h3 class="work-company"><a href="https://lumalabs.ai/">Luma AI</a></h3>
+                                </div>
+                                <span class="work-status">Current</span>
+                            </div>
+                            <div class="work-panel-body">
+                                <div class="work-role-list" aria-label="Roles at Luma AI">
+                                    <div class="role-line current-role">
+                                        <span class="job-title">Research Scientist Lead</span>
+                                        <span class="role-date">Jan. 2026 — Present</span>
+                                    </div>
+                                    <div class="role-line">
+                                        <span class="job-title">Research Scientist</span>
+                                        <span class="role-date">Jun. 2025 — Jan. 2026</span>
+                                    </div>
+                                </div>
+                                <div class="work-info-block">
+                                    <p class="work-label">Selected work</p>
+                                    <ul class="work-project-list">
+                                        <li><a href="https://lumalabs.ai/news/ray3_14">Ray3.14</a><span>Fast video generation through distillation</span></li>
+                                        <li><a href="https://lumalabs.ai/uni-1">Uni-1</a><span>Unified multimodal reasoning and pixel generation</span></li>
+                                        <li><strong>Generative media</strong><span>Speech-to-video and joint audio-video generation</span></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <p class="work-detail">Host:
-                            <a href="https://pseeth.github.io/">Prem Seetharaman</a>,
-                            <a href="https://bryanrussell.org/">Bryan Russell</a>,
-                            and
-                            <a href="https://www.justinsalamon.com/">Justin Salamon</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row work-item">
-                <div class="block wow fadeInLeft work-entry" data-wow-delay=".2s" data-wow-duration="400ms">
-                    <div class="col-md-3 col-sm-3 text-center">
-                        <a href="https://about.meta.com/realitylabs/"><img src="./images/work/reality_lab.png" alt="" class="logo-thumb"></a>
-                    </div>
-                    <div class="col-md-7 col-sm-8">
-                        <p class="work-company"><span class="mybold">Codec Avatars Lab, Pittsburgh, Meta</span></p>
-                        <div class="role-line">
-                            <span class="job-title">Research Scientist Intern</span>
-                            <span class="role-date">May 2023 ~ Nov. 2023</span>
+                        <div class="work-panel" role="tabpanel" id="work-adobe" aria-labelledby="tab-adobe" data-i="1" hidden>
+                            <div class="work-panel-header">
+                                <div>
+                                    <p class="work-eyebrow">Research internship · Generative audio</p>
+                                    <h3 class="work-company"><a href="https://research.adobe.com/">Adobe Research</a></h3>
+                                </div>
+                            </div>
+                            <div class="work-panel-body">
+                                <div class="work-role-list" aria-label="Role at Adobe Research">
+                                    <div class="role-line">
+                                        <span class="job-title">Research Scientist Intern</span>
+                                        <span class="role-date">May — Nov. 2024</span>
+                                    </div>
+                                </div>
+                                <div class="work-info-grid">
+                                    <div class="work-info-block">
+                                        <p class="work-label">Research mentors</p>
+                                        <p class="work-detail"><a href="https://pseeth.github.io/">Prem Seetharaman</a>, <a href="https://bryanrussell.org/">Bryan Russell</a>, and <a href="https://www.justinsalamon.com/">Justin Salamon</a></p>
+                                    </div>
+                                    <div class="work-info-block work-featured-project">
+                                        <p class="work-label">Featured project</p>
+                                        <p class="work-project-title"><a href="https://ificl.github.io/MultiFoley/">MultiFoley</a></p>
+                                        <p class="work-detail">Video-guided sound generation with text, audio, and video conditioning.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p class="work-detail">Host:
-                            <a href="https://scholar.google.it/citations?user=5RFgT84AAAAJ&hl=en">Israel D. Gebru</a>,
-                            <a href="https://richardt.name/">Christian Richardt</a>,
-                            and
-                            <a href="https://alexanderrichard.github.io/">Alexander Richard</a>
-                        </p>
+                        <div class="work-panel" role="tabpanel" id="work-meta" aria-labelledby="tab-meta" data-i="2" hidden>
+                            <div class="work-panel-header">
+                                <div>
+                                    <p class="work-eyebrow">Research internship · Spatial audio</p>
+                                    <h3 class="work-company"><a href="https://about.meta.com/realitylabs/">Meta · Codec Avatars Lab</a></h3>
+                                    <p class="work-location">Pittsburgh, Pennsylvania</p>
+                                </div>
+                            </div>
+                            <div class="work-panel-body">
+                                <div class="work-role-list" aria-label="Role at Meta">
+                                    <div class="role-line">
+                                        <span class="job-title">Research Scientist Intern</span>
+                                        <span class="role-date">May — Nov. 2023</span>
+                                    </div>
+                                </div>
+                                <div class="work-info-grid">
+                                    <div class="work-info-block">
+                                        <p class="work-label">Research mentors</p>
+                                        <p class="work-detail"><a href="https://scholar.google.it/citations?user=5RFgT84AAAAJ&amp;hl=en">Israel D. Gebru</a>, <a href="https://richardt.name/">Christian Richardt</a>, and <a href="https://alexanderrichard.github.io/">Alexander Richard</a></p>
+                                    </div>
+                                    <div class="work-info-block work-featured-project">
+                                        <p class="work-label">Featured project</p>
+                                        <p class="work-project-title"><a href="https://facebookresearch.github.io/real-acoustic-fields/">Real Acoustic Fields</a></p>
+                                        <p class="work-detail">A multimodal dataset capturing real-world room acoustics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -779,6 +821,36 @@
                             b.style.visibility = 'visible';
                             b.style.animationName = 'none';
                         });
+                    }
+                });
+            });
+        })();
+
+        (function () {
+            var tabs = Array.prototype.slice.call(document.querySelectorAll('.work-tab'));
+            var panels = document.querySelectorAll('.work-panel');
+            if (!tabs.length) return;
+            function select(idx) {
+                tabs.forEach(function (t) {
+                    var on = t.getAttribute('data-i') === String(idx);
+                    t.classList.toggle('active', on);
+                    t.setAttribute('aria-selected', on ? 'true' : 'false');
+                    t.setAttribute('tabindex', on ? '0' : '-1');
+                });
+                panels.forEach(function (p) {
+                    var on = p.getAttribute('data-i') === String(idx);
+                    p.classList.toggle('active', on);
+                    p.hidden = !on;
+                });
+            }
+            tabs.forEach(function (tab, i) {
+                tab.addEventListener('click', function () { select(tab.getAttribute('data-i')); });
+                tab.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft' || e.key === 'Home' || e.key === 'End') {
+                        e.preventDefault();
+                        var next = e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : e.key === 'ArrowRight' ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
+                        tabs[next].focus();
+                        select(tabs[next].getAttribute('data-i'));
                     }
                 });
             });
