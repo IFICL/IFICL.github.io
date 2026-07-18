@@ -1685,14 +1685,41 @@ article {
 
 /* Work Experience: tabbed employers (circular logo tabs -> detail panel) */
 .work-tabs {
+  max-width: 100%;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: 10px;
+  scroll-snap-type: x proximity;
+  scrollbar-color: rgba(0, 49, 87, 0.22) transparent;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.work-tabs-track {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  width: max-content;
+  min-width: 100%;
   gap: 56px;
-  margin-bottom: 28px;
+  padding: 8px 10px 11px;
+}
+
+.work-tabs::-webkit-scrollbar {
+  height: 5px;
+}
+
+.work-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.work-tabs::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(0, 49, 87, 0.22);
 }
 
 .work-tab {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1703,6 +1730,7 @@ article {
   background: transparent;
   cursor: pointer;
   font-family: inherit;
+  scroll-snap-align: center;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -1942,10 +1970,22 @@ article {
 }
 
 .work-project-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 3px 9px;
   margin: 0 0 3px !important;
   font-size: 17px !important;
   font-weight: 600 !important;
   line-height: 1.5 !important;
+}
+
+.work-project-venue {
+  color: #7a8992;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .work-location {
@@ -1989,7 +2029,7 @@ article {
 }
 
 @media (max-width: 767px) {
-  .work-tabs {
+  .work-tabs-track {
     gap: 22px;
   }
   .work-tab img {
