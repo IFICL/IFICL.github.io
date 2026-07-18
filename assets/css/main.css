@@ -1442,7 +1442,7 @@ article {
 #Publication .pub-entry .col-md-7 p {
   margin: 0;
   color: #3e4d56;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.72;
 }
 
@@ -1536,10 +1536,40 @@ article {
   }
 }
 
-/* Shared container classes (replace repeated inline styles) */
-.section-block {
-  padding-top: 40px;
-  margin-top: -60px;
+/* Shared section rhythm and fixed-navigation anchor offset */
+.site-section {
+  margin: 0;
+  padding: 40px 0 32px;
+  border-top: 1px solid #eee;
+  scroll-margin-top: 51px;
+}
+
+#about.site-section {
+  padding: 30px 0 32px;
+  border-top: 0;
+}
+
+.site-section > .container > .row:first-child > .block {
+  padding-top: 0;
+}
+
+.site-section > .container > .row:first-child > .block > h2:first-child,
+.site-section .pub-header h2 {
+  margin-top: 0;
+}
+
+#Work > .container > .row:first-child .block h2 {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .site-section {
+    padding: 32px 0 36px;
+  }
+
+  #about.site-section {
+    padding: 30px 0 36px;
+  }
 }
 
 .pub-entry {
@@ -1914,18 +1944,6 @@ article {
 }
 
 /* News: a quiet timeline that keeps short updates easy to scan */
-.news-section {
-  margin-top: -100px;
-}
-
-.news-section .block {
-  padding-top: 10px;
-}
-
-.news-section .block h2 {
-  margin-top: 0;
-}
-
 .news-timeline {
   position: relative;
   max-width: 760px;
