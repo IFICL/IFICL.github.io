@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,46 +17,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Template CSS Files
         ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap">
     <!-- Twitter Bootstrs CSS -->
-    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Ionicons Fonts Css -->
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Hero area slider css-->
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <!-- owl craousel css -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
     <!-- template main css file -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Template Javascript Files
         ================================================== -->
-    <!-- modernizr js -->
-    <script src="assets/js/modernizr-2.6.2.min.js"></script>
     <!-- jquery -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- owl carouserl js -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script defer src="assets/js/jquery.min.js"></script>
     <!-- bootstrap js -->
-
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script defer src="assets/js/bootstrap.min.js"></script>
     <!-- wow js -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- slider js -->
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
+    <script defer src="assets/js/wow.min.js"></script>
     <!-- template main js -->
-    <script src="assets/js/main.js"></script>
-    <style type="text/css">
-        .fancybox-margin {
-            margin-right: 16px;
-        }
-    </style>
+    <script defer src="assets/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZL4BP5RJ60"></script>
@@ -71,6 +52,7 @@
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!--
         ==================================================
         Header Section Start
@@ -79,7 +61,7 @@
         <div class="container">
             <div class="navbar-header">
                 <!-- responsive nav button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -95,11 +77,11 @@
                 <!-- /logo -->
             </div>
             <!-- main menu -->
-            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <nav id="main-navigation" class="collapse navbar-collapse navbar-right" aria-label="Primary navigation">
                 <div class="main-menu">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#about">Home</a>
                         </li>
                         <li>
                             <a href="#Research">Research</a>
@@ -128,20 +110,21 @@
             Slider Section Start
             ================================================== -->
 
+    <main id="main-content" tabindex="-1">
     <section id="about" class="site-section">
         <div class="container">
             <div class="row about-layout">
                 <div class="col-md-4 col-sm-4 about-portrait-column">
                     <div class="block wow fadeInRight" data-wow-delay=".2s" data-wow-duration="400ms">
                         <div class="text-center">
-                            <img class="about-portrait" src="images/selfish/self.jpg" alt="Portrait of Ziyang Chen" width="200" height="200">
+                            <img class="about-portrait" src="images/selfish/self-480.jpg" alt="Portrait of Ziyang Chen" width="200" height="200" decoding="async" fetchpriority="high">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-7 about-copy-column">
                     <div class="block about-intro wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
-                        <h2>About</h2>
-                        <p>I am a Research Scientist Lead at <a href="https://lumalabs.ai/">Luma AI</a>, working on multimodal foundation models.</p>
+                        <h1 class="about-heading">About</h1>
+                        <p>I am a <span class="about-role-emphasis">Research Scientist Lead</span> at <a href="https://lumalabs.ai/">Luma AI</a>, working on multimodal foundation models.</p>
                         <div class="about-bio">
                             <p>I received my Ph.D. in Computer Vision from <a href="https://umich.edu/">the University of Michigan</a>, advised by Prof. <a href="http://andrewowens.com/">Andrew Owens</a>. Before that, I earned my Master's degree at Michigan and my Bachelor's degree from <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
                             <p>During my Ph.D., I interned with the Codec Avatars Lab at <a href="https://about.meta.com/realitylabs/">Meta</a> and the SODA Group at <a href="https://research.adobe.com/">Adobe Research</a>. I also collaborated with Prof. <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a> and Prof. <a href="https://vision.cs.yale.edu/members/alex-wong.html">Alex Wong</a>.</p>
@@ -206,15 +189,15 @@
                     <div class="text-center">
                     <div class="img-wall" style="width: 85%;">
                         <div class="img-wall-element">
-                            <img src="images/research/multi_modal.jpg">
+                            <img src="images/research/multi_modal.jpg" alt="Illustration of multimodal learning across different data types" loading="lazy" decoding="async">
                             <div><span class="keyword-pill" data-topic="multimodal">Multimodal Learning</span></div>
                         </div>
                         <div class="img-wall-element">
-                            <img src="images/research/unified_model.jpg">
+                            <img src="images/research/unified_model.jpg" alt="Diagram representing a unified multimodal model" loading="lazy" decoding="async">
                             <div><span class="keyword-pill" data-topic="unified">Unified Models</span></div>
                         </div>
                         <div class="img-wall-element">
-                            <img src="images/research/diffusion.jpg">
+                            <img src="images/research/diffusion.jpg" alt="Illustration of the diffusion model generation process" loading="lazy" decoding="async">
                             <div><span class="keyword-pill" data-topic="diffusion">Diffusion Models</span></div>
                         </div>
 
@@ -243,15 +226,15 @@
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="work-tabs" role="tablist" aria-label="Employers">
                         <button class="work-tab active" role="tab" aria-selected="true" aria-controls="work-luma" id="tab-luma" data-i="0" tabindex="0">
-                            <img src="./images/work/luma.png" alt="Luma AI">
+                            <img src="./images/work/luma.png" alt="" width="100" height="100" loading="lazy" decoding="async">
                             <span>Luma AI</span>
                         </button>
                         <button class="work-tab" role="tab" aria-selected="false" aria-controls="work-adobe" id="tab-adobe" data-i="1" tabindex="-1">
-                            <img src="./images/work/adobe-icon.png" alt="Adobe Research">
+                            <img src="./images/work/adobe-icon.png" alt="" width="100" height="100" loading="lazy" decoding="async">
                             <span>Adobe Research</span>
                         </button>
                         <button class="work-tab" role="tab" aria-selected="false" aria-controls="work-meta" id="tab-meta" data-i="2" tabindex="-1">
-                            <img src="./images/work/reality_lab.png" alt="Meta">
+                            <img src="./images/work/reality_lab.png" alt="" width="100" height="100" loading="lazy" decoding="async">
                             <span>Meta</span>
                         </button>
                     </div>
@@ -366,7 +349,7 @@
             <div class="row pub-entry pub-selected" name="multifoley">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2411.17698"><img src="images/projects/multifoley.jpg" alt="MultiFoley video-guided sound generation overview" loading="lazy"
+                        <a href="https://arxiv.org/abs/2411.17698"><img src="images/projects/multifoley.jpg" alt="MultiFoley video-guided sound generation overview" loading="lazy" decoding="async"
                                 style="width: 100%;  border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
@@ -379,7 +362,7 @@
                             <a href="https://www.urinieto.com/">Oriol Nieto</a>,
                             <a href="https://www.davidbourgin.com/">David Bourgin</a>,
                             <a href="http://andrewowens.com/">Andrew Owens</a>,
-                            <a href="https://www.justinsalamon.com/" target="_blank">Justin Salamon</a>
+                            <a href="https://www.justinsalamon.com/" target="_blank" rel="noopener noreferrer">Justin Salamon</a>
                             <br>
                             CVPR 2025
                             <br>
@@ -387,7 +370,7 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://arxiv.org/abs/2411.17698">paper</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://ificl.github.io/MultiFoley/#BibTeX" target="_blank">bibtex</a>
+                            <a href="https://ificl.github.io/MultiFoley/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                         </p>
                     </div>
                 </div>
@@ -397,7 +380,7 @@
             <div class="row pub-entry" name="GPS-Gen">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://cfeng16.github.io/gps-gen/"><img src="images/projects/gpsgen.jpg" alt="GPS-controlled image generation overview" loading="lazy" style="width: 95%;"></a>
+                        <a href="https://cfeng16.github.io/gps-gen/"><img src="images/projects/gpsgen.jpg" alt="GPS-controlled image generation overview" loading="lazy" decoding="async" style="width: 95%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -427,7 +410,7 @@
             <div class="row pub-entry" name="Ego-Spatial">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Min_Supervising_Sound_Localization_by_In-the-wild_Egomotion_CVPR_2025_paper.pdf"><img src="images/projects/sup-egomotion.jpg" alt="Egomotion-supervised sound localization overview" loading="lazy" style="width: 95%; border-radius: 10px;"></a>
+                        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Min_Supervising_Sound_Localization_by_In-the-wild_Egomotion_CVPR_2025_paper.pdf"><img src="images/projects/sup-egomotion.jpg" alt="Egomotion-supervised sound localization overview" loading="lazy" decoding="async" style="width: 95%; border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -451,7 +434,7 @@
             <div class="row pub-entry pub-selected" name="images-that-sound"> 
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2405.12221"><img src="images/projects/images-that-sound.jpg" alt="Images that Sound composition examples" loading="lazy" style="width: 100%;  border-radius: 10px;"></a>
+                        <a href="https://arxiv.org/abs/2405.12221"><img src="images/projects/images-that-sound.jpg" alt="Images that Sound composition examples" loading="lazy" decoding="async" style="width: 100%;  border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                             <p>
@@ -472,7 +455,7 @@
                                 &nbsp;&middot;&nbsp;
                                 <a href="https://github.com/IFICL/images-that-sound">code</a>
                                 &nbsp;&middot;&nbsp;
-                                <a href="https://ificl.github.io/images-that-sound/#BibTeX" target="_blank">bibtex</a>
+                                <a href="https://ificl.github.io/images-that-sound/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                             </p>
                     </div>
                 </div>
@@ -481,7 +464,7 @@
             <div class="row pub-entry pub-selected" name="real-acoustic-fields">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2403.18821"><img src="images/projects/RAF.jpg" alt="Real Acoustic Fields capture setup" loading="lazy" style="width: 100%;  border-radius: 10px;"></a>
+                        <a href="https://arxiv.org/abs/2403.18821"><img src="images/projects/RAF.jpg" alt="Real Acoustic Fields capture setup" loading="lazy" decoding="async" style="width: 100%;  border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -504,7 +487,7 @@
                                         &nbsp;&middot;&nbsp;
                                         <a href="https://github.com/facebookresearch/real-acoustic-fields/">dataset</a>
                                         &nbsp;&middot;&nbsp;
-                                        <a href="https://facebookresearch.github.io/real-acoustic-fields/#BibTeX" target="_blank">bibtex</a>
+                                        <a href="https://facebookresearch.github.io/real-acoustic-fields/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                         </p>
                     </div>
                 </div>
@@ -514,7 +497,7 @@
             <div class="row pub-entry pub-selected" name="UniTouch">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2401.18084"><img src="images/projects/unitouch.jpg" alt="UniTouch multimodal tactile representation overview" loading="lazy" style="width: 100%;"></a>
+                        <a href="https://arxiv.org/abs/2401.18084"><img src="images/projects/unitouch.jpg" alt="UniTouch multimodal tactile representation overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -536,7 +519,7 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://github.com/cfeng16/UniTouch">code</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://cfeng16.github.io/UniTouch/#BibTeX" target="_blank">bibtex</a>
+                            <a href="https://cfeng16.github.io/UniTouch/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                         </p>
                     </div>
                 </div>
@@ -549,7 +532,7 @@
             <div class="row pub-entry pub-selected" name="SLfM">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2303.11329"><img src="images/projects/SLfM.jpg" alt="Sound Localization from Motion overview" loading="lazy" style="width: 80%;"></a>
+                        <a href="https://arxiv.org/abs/2303.11329"><img src="images/projects/SLfM.jpg" alt="Sound Localization from Motion overview" loading="lazy" decoding="async" style="width: 80%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -565,7 +548,7 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://github.com/IFICL/SLfM">code</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://ificl.github.io/SLfM/#BibTeX" target="_blank">bibtex</a>
+                            <a href="https://ificl.github.io/SLfM/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                             <br>
                         </p>
                     </div>
@@ -575,7 +558,7 @@
             <div class="row pub-entry" name="condfoleygen">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2304.08490"><img src="images/projects/condfoleygen.jpg" alt="Conditional Foley generation examples" loading="lazy" style="width: 100%; margin-top: 5px;"></a>
+                        <a href="https://arxiv.org/abs/2304.08490"><img src="images/projects/condfoleygen.jpg" alt="Conditional Foley generation examples" loading="lazy" decoding="async" style="width: 100%; margin-top: 5px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -602,7 +585,7 @@
             <div class="row pub-entry" name="avforensics">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2301.01767"><img src="images/projects/avforensics.jpg" alt="Audio-visual anomaly detection overview" loading="lazy" style="width: 60%;"></a>
+                        <a href="https://arxiv.org/abs/2301.01767"><img src="images/projects/avforensics.jpg" alt="Audio-visual anomaly detection overview" loading="lazy" decoding="async" style="width: 60%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -628,7 +611,7 @@
             <div class="row pub-entry" name="stereocrw">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2204.12489"><img src="images/projects/stereocrw.jpg" alt="Stereo sound localization method overview" loading="lazy" style="width: 100%;"></a>
+                        <a href="https://arxiv.org/abs/2204.12489"><img src="images/projects/stereocrw.jpg" alt="Stereo sound localization method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -658,7 +641,7 @@
             <div class="row pub-entry" name="mix-and-localize">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2211.15058"><img src="images/projects/mixcrw.jpg" alt="Mix and Localize method overview" loading="lazy" style="width: 100%;"></a>
+                        <a href="https://arxiv.org/abs/2211.15058"><img src="images/projects/mixcrw.jpg" alt="Mix and Localize method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -686,7 +669,7 @@
             <div class="row pub-entry pub-selected" name="structure-from-silence">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
-                        <a href="https://arxiv.org/abs/2111.05846"><img src="images/projects/sfs.jpg" alt="Structure from Silence method overview" loading="lazy" style="width: 100%;"></a>
+                        <a href="https://arxiv.org/abs/2111.05846"><img src="images/projects/sfs.jpg" alt="Structure from Silence method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -769,6 +752,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
         <!--
             ==================================================
