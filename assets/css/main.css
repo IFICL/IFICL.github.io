@@ -1686,7 +1686,7 @@ article {
 /* Work Experience: tabbed employers (circular logo tabs -> detail panel) */
 .work-tabs {
   max-width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-padding-inline: 10px;
@@ -1702,7 +1702,7 @@ article {
   width: max-content;
   min-width: 100%;
   gap: 56px;
-  padding: 8px 10px 11px;
+  padding: 8px 10px 7px;
 }
 
 .work-tabs::-webkit-scrollbar {
