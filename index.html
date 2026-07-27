@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,7 +7,8 @@
         ================================================== -->
 
     <title>Ziyang Chen</title>
-    <link rel="shortcut icon" href="https://umich.edu/favicon.ico" />
+    <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <meta name="description" content="Ziyang Chen's Personal Website">
     <meta name="keywords" content="webpage">
     <meta name="author" content="Ziyang Chen">
@@ -17,46 +18,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Template CSS Files
         ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap">
     <!-- Twitter Bootstrs CSS -->
-    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Ionicons Fonts Css -->
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Hero area slider css-->
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <!-- owl craousel css -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
     <!-- template main css file -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Template Javascript Files
         ================================================== -->
-    <!-- modernizr js -->
-    <script src="assets/js/modernizr-2.6.2.min.js.download"></script>
     <!-- jquery -->
-    <script src="assets/js/jquery.min.js.download"></script>
-    <!-- owl carouserl js -->
-    <script src="assets/js/owl.carousel.min.js.download"></script>
+    <script defer src="assets/js/jquery.min.js"></script>
     <!-- bootstrap js -->
-
-    <script src="assets/js/bootstrap.min.js.download"></script>
+    <script defer src="assets/js/bootstrap.min.js"></script>
     <!-- wow js -->
-    <script src="assets/js/wow.min.js.download"></script>
-    <!-- slider js -->
-    <script src="assets/js/slider.js.download"></script>
-    <script src="assets/js/jquery.fancybox.js.download"></script>
+    <script defer src="assets/js/wow.min.js"></script>
     <!-- template main js -->
-    <script src="assets/js/main.js.download"></script>
-    <style type="text/css">
-        .fancybox-margin {
-            margin-right: 16px;
-        }
-    </style>
+    <script defer src="assets/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZL4BP5RJ60"></script>
@@ -71,6 +53,7 @@
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!--
         ==================================================
         Header Section Start
@@ -79,7 +62,7 @@
         <div class="container">
             <div class="navbar-header">
                 <!-- responsive nav button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -95,11 +78,11 @@
                 <!-- /logo -->
             </div>
             <!-- main menu -->
-            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <nav id="main-navigation" class="collapse navbar-collapse navbar-right" aria-label="Primary navigation">
                 <div class="main-menu">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#about">Home</a>
                         </li>
                         <li>
                             <a href="#Research">Research</a>
@@ -128,118 +111,112 @@
             Slider Section Start
             ================================================== -->
 
-    <section id="about" style=" margin-top: -80px;">
+    <main id="main-content" tabindex="-1">
+    <section id="about" class="site-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="block wow fadeInRight animated" data-wow-delay=".2s" data-wow-duration="400ms
-                        style="visibility: visible; animation-duration: 400ms; animation-delay: 0.0s; animation-name: fadeInRight;">
-                        <br>
-                        <br>
-                        <br>
-                        <div align=center><img class="icon" src="images/selfish/self.jpg" style="max-width: 200px;"></div>
-
+            <div class="row about-layout">
+                <div class="col-md-4 col-sm-4 about-portrait-column">
+                    <div class="block wow fadeInRight" data-wow-delay=".2s" data-wow-duration="400ms">
+                        <div class="text-center">
+                            <img class="about-portrait" src="images/selfish/self-480.jpg" alt="Portrait of Ziyang Chen" width="200" height="200" decoding="async" fetchpriority="high">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-7 col-sm-7">
-                    <br>
-                    <div class="block wow fadeInLeft animated" data-wow-delay=".2s" data-wow-duration="400ms
-                        style="visibility: visible; animation-duration: 400ms; animation-delay: 0.0s; animation-name: fadeInLeft; margin-bottom: 10px;" >
-                        <h2>
-                            About
-                        </h2>
-                        <p> 
-                            I am a Research Scientist at <a href="https://lumalabs.ai/">Luma AI</a>, working on multimodal foundation models. 
-                            <br>
-                            I obtained my Ph.D. in Computer Vision at <a href="https://umich.edu/">the University of Michigan</a>, where I was
-                            advised by Prof. <a href="http://andrewowens.com/">Andrew Owens</a>. Prior to that, I earned my Master's degree at the University of Michigan and my Bachelor's degree at <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
-                            <br>
-                        </p>
-                        <p>
-                            My primary research interest lies in Multimodal learning and Computer Vision. I have spent wonderful years in <a href="http://vision.eecs.umich.edu/people.html">computer vision group @ Michigan</a>. During my Ph.D. I have been fortunate to intern at Codec Avatars Lab of <a href="https://about.meta.com/realitylabs/">Meta</a> and SODA (Sound Design AI) Group of <a href="https://research.adobe.com/">Adobe Research</a>. 
-                            I am honored to collaborate with Prof. <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a> and Prof. <a href="https://vision.cs.yale.edu/members/alex-wong.html">Alex Wong</a>. 
-
-                            <!-- <p style="color:rgb(0, 17, 255); font-weight: bold;">
-                                I'm currently seeking full-time opportunities starting in Summer 2025. Please feel free to reach out if you have any openings!
-                            </p> -->
-                        </p>
-                        <p> <a href="https://scholar.google.com/citations?user=PbsR83sAAAAJ">Google Scholar</a>
-                        &nbsp;&middot;&nbsp; <a href="https://github.com/IFICL">GitHub</a>
-                        &nbsp;&middot;&nbsp; <a href="docs/CV-ziyangchen.pdf">CV</a>
-                        &nbsp;&middot;&nbsp; <a href="https://x.com/CzyangChen">Twitter</a>
-                        &nbsp;&middot;&nbsp; <a href="https://bsky.app/profile/czyang.bsky.social">Bluesky</a>
-                        &nbsp;&middot;&nbsp; <a href="https://www.linkedin.com/in/ziyang-chen-701982200/">Linkedin</a>
-                        </p>
+                <div class="col-md-7 col-sm-7 about-copy-column">
+                    <div class="block about-intro wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                        <h1 class="about-heading">About</h1>
+                        <p>I am a <span class="about-role-emphasis">Research Scientist Lead</span> at <a href="https://lumalabs.ai/">Luma AI</a>, working on multimodal foundation models.</p>
+                        <div class="about-bio">
+                            <p>I received my Ph.D. in Computer Vision from <a href="https://umich.edu/">the University of Michigan</a>, advised by Prof. <a href="http://andrewowens.com/">Andrew Owens</a>. Before that, I earned my Master's degree at Michigan and my Bachelor's degree from <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
+                            <p>During my Ph.D., I interned with the Codec Avatars Lab at <a href="https://about.meta.com/realitylabs/">Meta</a> and the SODA Group at <a href="https://research.adobe.com/">Adobe Research</a>. I also collaborated with Prof. <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a> and Prof. <a href="https://vision.cs.yale.edu/members/alex-wong.html">Alex Wong</a>.</p>
+                        </div>
+                        <nav class="about-links" aria-label="Profiles and résumé">
+                            <a class="about-link-primary" href="https://scholar.google.com/citations?user=PbsR83sAAAAJ">Google Scholar</a>
+                            <a class="about-link-primary" href="https://github.com/IFICL">GitHub</a>
+                            <a class="about-link-primary" href="docs/CV-ziyangchen.pdf">Resume</a>
+                            <a href="https://www.linkedin.com/in/ziyang-chen-701982200/">LinkedIn</a>
+                            <a href="https://x.com/CzyangChen">Twitter</a>
+                            <a href="https://bsky.app/profile/czyang.bsky.social">Bluesky</a>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
     </section>
     
     
-    <section id="News" style=" margin-top: -100px;">
+    <section id="News" class="site-section news-section">
         <div class="container">
             <div class="row">
-                <div class="block wow fadeInRight animated" data-wow-delay=".2s" data-wow-duration="400ms
-                    style="visibility: visible; animation-duration: 400ms; animation-delay: 0.0s; animation-name: fadeInRight;">
+                <div class="block wow fadeInRight" data-wow-delay=".2s" data-wow-duration="400ms">
                     <h2>
                         News
                     </h2>
-                    <ul>
-                        <li>[2025/05] I am joining LUMA AI as a full-time Research scientist!</li>
-                        <li>[2025/05] I defended my Ph.D. and graduated!</li>
-                        <li>[2025/02] Three papers are accepted to CVPR 2025! See you in Nashville!</li>
-                        <li>[2024/11] Check out our new work <a href="https://arxiv.org/abs/2411.17698" target="_blank">MultiFoley</a> for creative Foley sound generation!</li>
-
+                    <ul class="news-timeline" tabindex="0" aria-label="News updates; scroll for older items">
+                        <li class="news-item news-latest">
+                            <time datetime="2026-01">Jan. 2026</time>
+                            <span>I am currently a Tech Lead at Luma AI for video-audio generation efforts.</span>
+                        </li>
+                        <li class="news-item">
+                            <time datetime="2025-05">May 2025</time>
+                            <span>I joined Luma AI as a full-time Research Scientist!</span>
+                        </li>
+                        <li class="news-item">
+                            <time datetime="2025-05">May 2025</time>
+                            <span>I defended my Ph.D. and graduated!</span>
+                        </li>
+                        <li class="news-item">
+                            <time datetime="2025-02">Feb. 2025</time>
+                            <span>Three papers were accepted to CVPR 2025! See you in Nashville!</span>
+                        </li>
+                        <li class="news-item">
+                            <time datetime="2024-11">Nov. 2024</time>
+                            <span>Check out our new work <a href="https://arxiv.org/abs/2411.17698" target="_blank" rel="noopener noreferrer">MultiFoley</a> for creative Foley sound generation!</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <hr>
     </section>
 
 
-    <section id="Research" style="padding-top: 40px; margin-top: -60px;">
+    <section id="Research" class="site-section">
         <div class="container">
             <div class="row">
-                <div class="block wow fadeInRight animated" data-wow-delay=".2s" data-wow-duration="400ms
-                    style="visibility: visible; animation-duration: 400ms; animation-delay: 0.0s; animation-name: fadeInRight;">
+                <div class="block wow fadeInRight" data-wow-delay=".2s" data-wow-duration="400ms">
                     <h2>
                         Research
                     </h2>
-                    <div align=center>
+                    <div class="text-center">
                     <div class="img-wall" style="width: 85%;">
                         <div class="img-wall-element">
-                            <img src="images/multi_modal.png" style="border: 3px gray dashed; border-radius: 15px;">
-                            <div><b>Multimodal Learning</b></div>
+                            <img src="images/research/multi_modal.jpg" alt="Illustration of multimodal learning across different data types" loading="lazy" decoding="async">
+                            <div><span class="keyword-pill" data-topic="multimodal">Multimodal Learning</span></div>
                         </div>
                         <div class="img-wall-element">
-                            <img src="images/self-supervision.png" style="border: 3px gray dashed; border-radius: 15px;">
-                            <div><b>Self-Supervision</b></div>
+                            <img src="images/research/unified_model_v2.jpg" alt="Diagram representing a unified multimodal model" loading="lazy" decoding="async">
+                            <div><span class="keyword-pill" data-topic="unified">Unified Models</span></div>
                         </div>
                         <div class="img-wall-element">
-                            <img src="images/3d_audio.png" style="border: 3px gray dashed; border-radius: 15px;">
-                            <div><b> Audio in Metaverse </b></div>
+                            <img src="images/research/diffusion.jpg" alt="Illustration of the diffusion model generation process" loading="lazy" decoding="async">
+                            <div><span class="keyword-pill" data-topic="diffusion">Diffusion Models</span></div>
                         </div>
-                        
+
                     </div>
                     </div>
                     <p class="research" >
-                        My research so far has focused on audio-visual learning, multimodal learning (vision, audio, language, touch) and computer vision with self-supervision. Still, I am open to other topics as well.
+                        My research focuses on <span class="topic-link" data-topic="multimodal">multimodal learning</span> across vision, audio, language, and touch, <span class="topic-link" data-topic="unified">unified models</span> that bind these modalities into a shared representation, and <span class="topic-link" data-topic="diffusion">diffusion models</span> for multimodal generation.
                     </p>
                 </div>
             </div>
         </div>
-        <hr>
     </section>
     
 
-    <section id="Work" style="padding-top: 40px; margin-top: -60px;">
+    <section id="Work" class="site-section">
         <div class="container">
             <div class="row">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms" style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name:
-                    none;">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <h2>
                         Work Experience
                     </h2>
@@ -247,99 +224,170 @@
             </div>
             
             <div class="row">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-3 col-sm-3" align="center">
-                        <a href="https://lumalabs.ai/"><img src="./images/work/luma.png" alt=""
-                                style="min-width: 100px; max-width: 100px;"></a>
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="work-tabs" role="tablist" aria-label="Employers">
+                        <div class="work-tabs-track" role="presentation">
+                            <button class="work-tab active" role="tab" aria-selected="true" aria-controls="work-luma" id="tab-luma" data-i="0" tabindex="0">
+                                <img src="./images/work/luma.png" alt="" width="100" height="100" loading="lazy" decoding="async">
+                                <span>Luma AI</span>
+                            </button>
+                            <button class="work-tab" role="tab" aria-selected="false" aria-controls="work-adobe" id="tab-adobe" data-i="1" tabindex="-1">
+                                <img src="./images/work/adobe-icon.png" alt="" width="100" height="100" loading="lazy" decoding="async">
+                                <span>Adobe</span>
+                            </button>
+                            <button class="work-tab" role="tab" aria-selected="false" aria-controls="work-meta" id="tab-meta" data-i="2" tabindex="-1">
+                                <img src="./images/work/reality_lab.png" alt="" width="100" height="100" loading="lazy" decoding="async">
+                                <span>Meta</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-sm-8">
-                        <p>
-                            <span class="mybold">Luma AI</span>, &nbsp; June 2025 ~ Now<br>
-                            Research Scientist <br>
-                            Topic: Multi-modal Generative Models
-                        </p>
-            
+
+                    <div class="work-panels">
+                        <div class="work-panel active" role="tabpanel" id="work-luma" aria-labelledby="tab-luma" data-i="0">
+                            <div class="work-panel-header">
+                                <div>
+                                    <p class="work-eyebrow">Industry · Multimodal AI</p>
+                                    <div class="work-company-line">
+                                        <h3 class="work-company"><a href="https://lumalabs.ai/">Luma AI</a></h3>
+                                        <p class="work-location">Redwood City, CA</p>
+                                    </div>
+                                </div>
+                                <span class="work-status">Current</span>
+                            </div>
+                            <div class="work-panel-body">
+                                <div class="work-role-list" aria-label="Roles at Luma AI">
+                                    <div class="role-line current-role">
+                                        <span class="job-title">Research Scientist Lead</span>
+                                        <span class="role-date">Jan. 2026 — Present</span>
+                                    </div>
+                                    <div class="role-line">
+                                        <span class="job-title">Research Scientist</span>
+                                        <span class="role-date">Jun. 2025 — Jan. 2026</span>
+                                    </div>
+                                </div>
+                                <div class="work-info-block">
+                                    <p class="work-label">Selected work</p>
+                                    <ul class="work-project-list">
+                                        <li><a href="https://lumalabs.ai/news/ray3_14">Ray3.14</a><span>Fast video generation through distillation</span></li>
+                                        <li><a href="https://lumalabs.ai/uni-1">Uni-1</a><span>Unified multimodal reasoning and pixel generation</span></li>
+                                        <li><strong>Generative media</strong><span>Speech-to-video and joint audio-video generation</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-panel" role="tabpanel" id="work-adobe" aria-labelledby="tab-adobe" data-i="1" hidden>
+                            <div class="work-panel-header">
+                                <div>
+                                    <p class="work-eyebrow">Research internship · Generative audio</p>
+                                    <div class="work-company-line">
+                                        <h3 class="work-company"><a href="https://research.adobe.com/">Adobe Research</a></h3>
+                                        <p class="work-location">San Francisco, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-panel-body">
+                                <div class="work-role-list" aria-label="Role at Adobe Research">
+                                    <div class="role-line">
+                                        <span class="job-title">Research Scientist Intern</span>
+                                        <span class="role-date">May — Nov. 2024</span>
+                                    </div>
+                                </div>
+                                <div class="work-info-grid">
+                                    <div class="work-info-block">
+                                        <p class="work-label">Research mentors</p>
+                                        <p class="work-detail"><a href="https://pseeth.github.io/">Prem Seetharaman</a>, <a href="https://bryanrussell.org/">Bryan Russell</a>, and <a href="https://www.justinsalamon.com/">Justin Salamon</a></p>
+                                    </div>
+                                    <div class="work-info-block work-featured-project">
+                                        <p class="work-label">Featured project</p>
+                                        <p class="work-project-title"><a href="https://ificl.github.io/MultiFoley/">MultiFoley</a><span class="work-project-venue">CVPR 2025</span></p>
+                                        <p class="work-detail">Video-guided sound generation with text, audio, and video conditioning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-panel" role="tabpanel" id="work-meta" aria-labelledby="tab-meta" data-i="2" hidden>
+                            <div class="work-panel-header">
+                                <div>
+                                    <p class="work-eyebrow">Research internship · Spatial audio&video</p>
+                                    <div class="work-company-line">
+                                        <h3 class="work-company"><a href="https://about.meta.com/realitylabs/">Meta · Codec Avatars Lab</a></h3>
+                                        <p class="work-location">Pittsburgh, PA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-panel-body">
+                                <div class="work-role-list" aria-label="Role at Meta">
+                                    <div class="role-line">
+                                        <span class="job-title">Research Scientist Intern</span>
+                                        <span class="role-date">May — Nov. 2023</span>
+                                    </div>
+                                </div>
+                                <div class="work-info-grid">
+                                    <div class="work-info-block">
+                                        <p class="work-label">Research mentors</p>
+                                        <p class="work-detail"><a href="https://scholar.google.it/citations?user=5RFgT84AAAAJ&amp;hl=en">Israel D. Gebru</a>, <a href="https://richardt.name/">Christian Richardt</a>, and <a href="https://alexanderrichard.github.io/">Alexander Richard</a></p>
+                                    </div>
+                                    <div class="work-info-block work-featured-project">
+                                        <p class="work-label">Featured project</p>
+                                        <p class="work-project-title"><a href="https://facebookresearch.github.io/real-acoustic-fields/">Real Acoustic Fields</a><span class="work-project-venue">CVPR 2024 · Highlight</span></p>
+                                        <p class="work-detail">A multimodal dataset capturing real-world room acoustics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br>
-
-            <div class="row">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms" style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;"> 
-                    <div class="col-md-3 col-sm-3" align="center">
-                        <a href="https://research.adobe.com/"><img src="./images/work/adobe.jpg" alt=""
-                                style="min-width: 100px; max-width: 100px;"></a>
-                    </div>
-                    <div class="col-md-7 col-sm-8">
-                            <p>
-                                <span class="mybold">Adobe Research</span>, &nbsp; May 2024 ~ Nov. 2024<br>
-                                Research Scientist Intern <br>
-                                Host:
-                                <a href="https://pseeth.github.io/">Prem Seetharaman</a>,
-                                <a href="https://bryanrussell.org/">Bryan Russell</a>,
-                                and
-                                <a href="https://www.justinsalamon.com/">Justin Salamon</a>
-                                <br>
-                            </p>
-
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-3 col-sm-3" align="center">
-                    
-                        <a href="https://about.meta.com/realitylabs/"><img src="./images/work/Reality_Labs_logo.png" alt="" style="min-width: 100px; max-width: 100px;"></a>
-                    </div>
-                
-                    <div class="col-md-7 col-sm-8"> <!-- Corrected class -->
-                            <p>
-                                <span class="mybold">Codec Avatars Lab, Pittsburgh, Meta</span>, &nbsp; May 2023 ~ Nov. 2023
-                                <br>
-                                Research Scientist Intern <br>
-                                Host:
-                                <a href="https://scholar.google.it/citations?user=5RFgT84AAAAJ&hl=en">Israel D. Gebru</a>,
-                                <a href="https://richardt.name/">Christian Richardt</a>,
-                                and
-                                <a href="https://alexanderrichard.github.io/">Alexander Richard</a>
-                                <br>
-                            </p>
-                    </div>
-                </div>
-            </div>
-            <br><br>
         </div>
     </section>
-    <hr>
 
 
-    <section id="Publication" style="padding-top: 40px; margin-top: -60px;">
+    <section id="Publication" class="site-section filter-selected">
         <div class="container">
             <div class="row">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <h2>
-                        Publication
-                    </h2>
-                    <p style="color:rgb(165, 165, 165); margin-top: -15px; margin-bottom: -5px;">&nbsp;&nbsp;(* indicates equal contribution)</p>
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="pub-header">
+                        <h2>Publication</h2>
+                        <div class="pub-toggle" role="group" aria-label="Filter publications">
+                            <button type="button" class="pub-toggle-btn active" data-filter="selected" aria-pressed="true">Selected</button>
+                            <button type="button" class="pub-toggle-btn" data-filter="all" aria-pressed="false">All</button>
+                        </div>
+                    </div>
+                    <p class="pub-note">* Equal contribution</p>
+                </div>
+            </div>
+
+            <div class="row pub-entry pub-selected" name="phd-dissertation">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://deepblue.lib.umich.edu/items/5612135b-61cb-47e1-9ab4-3c3dda3f605b" aria-label="View the dissertation Connecting Sight and Sound through Space, Time and Language">
+                            <div class="pub-teaser-placeholder" aria-hidden="true">
+                                <span class="pub-placeholder-kicker">Ph.D. Dissertation</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <p>
+                            <span class="mybold">Connecting Sight and Sound through Space, Time and Language</span><br>
+                            Ziyang Chen
+                            <br>
+                            Ph.D. Dissertation, University of Michigan, 2025
+                            <br>
+                            <a href="https://deepblue.lib.umich.edu/items/5612135b-61cb-47e1-9ab4-3c3dda3f605b">dissertation</a>
+                        </p>
+                    </div>
                 </div>
             </div>
             
-            <div class="row" name="multifoley" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href=" "><img src="images/projects/multifoley.jpg" alt=""
+            <div class="row pub-entry pub-selected" name="multifoley">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2411.17698"><img src="images/projects/multifoley.jpg" alt="MultiFoley video-guided sound generation overview" loading="lazy" decoding="async"
                                 style="width: 100%;  border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
-                            <span class="mybold"> <img src="images/new.png" alt="" style="width: 7%;">
-                                Video-Guided Foley Sound Generation with Multimodal Controls</span><br>
+                            <span class="mybold">Video-Guided Foley Sound Generation with Multimodal Controls</span><br>
             
                             Ziyang Chen,
                             <a href="https://pseeth.github.io/">Prem Seetharaman</a>,
@@ -347,7 +395,7 @@
                             <a href="https://www.urinieto.com/">Oriol Nieto</a>,
                             <a href="https://www.davidbourgin.com/">David Bourgin</a>,
                             <a href="http://andrewowens.com/">Andrew Owens</a>,
-                            <a href="https://www.justinsalamon.com/" target="_blank">Justin Salamon</a>
+                            <a href="https://www.justinsalamon.com/" target="_blank" rel="noopener noreferrer">Justin Salamon</a>
                             <br>
                             CVPR 2025
                             <br>
@@ -355,22 +403,21 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://arxiv.org/abs/2411.17698">paper</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://ificl.github.io/MultiFoley/#BibTeX" target="_blank">bibtex</a>
+                            <a href="https://ificl.github.io/MultiFoley/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                         </p>
                     </div>
                 </div>
             </div>
 
 
-            <div class="row" name="GPS-Gen" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href=""><img src="images/projects/gpsgen.jpg" alt="" style="width: 95%;"></a>
+            <div class="row pub-entry" name="GPS-Gen">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://cfeng16.github.io/gps-gen/"><img src="images/projects/gpsgen.jpg" alt="GPS-controlled image generation overview" loading="lazy" decoding="async" style="width: 95%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
-                            <span class="mybold"> <img src="images/new.png" alt="" style="width: 7%;"> GPS as a Control Signal for Image Generation </span><br>
+                            <span class="mybold">GPS as a Control Signal for Image Generation</span><br>
         
                             <a href="https://cfeng16.github.io/">Chao Feng</a>,
                             Ziyang Chen,
@@ -393,43 +440,34 @@
                 </div>
             </div>
 
-            <div class="row" name="Ego-Spatial" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href=""><img src="images/projects/geo-spatial.jpg" alt="" style="width: 95%;"></a>
+            <div class="row pub-entry" name="Ego-Spatial">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Min_Supervising_Sound_Localization_by_In-the-wild_Egomotion_CVPR_2025_paper.pdf"><img src="images/projects/sup-egomotion.jpg" alt="Egomotion-supervised sound localization overview" loading="lazy" decoding="async" style="width: 95%; border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
-                            <span class="mybold"> <img src="images/new.png" alt="" style="width: 7%;"> Supervising Sound Localization Using In-the-wild Ego-motion </span>
+                            <span class="mybold">Supervising Sound Localization Using In-the-wild Ego-motion</span>
                             <br>
             
-                            <a href="https://annamin0.github.io/">Anna Min</a>,
+                            <a href="https://www.linkedin.com/in/anna-min-a69963263/">Anna Min</a>,
                             Ziyang Chen,
                             <a href="https://hangzhaomit.github.io/">Hang Zhao</a>,
                             <a href="http://andrewowens.com/">Andrew Owens</a>
                             <br>
                             CVPR 2025 (<span style="color:#a00"><b>Highlight</b></span>)
                             <br>
-                            
-                            <!-- <a href="">project page</a>
-                            &nbsp;&middot;&nbsp;
-                            <a href="">paper</a>
-                            &nbsp;&middot;&nbsp;
-                            <a href="">code</a>
-                            &nbsp;&middot;&nbsp;
-                            <a href="">bibtex</a> -->
-                            <!-- <br> -->
+  
+                            <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Min_Supervising_Sound_Localization_by_In-the-wild_Egomotion_CVPR_2025_paper.pdf">paper</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="row" name="images-that-sound" style="margin-bottom: 20px;"> 
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2405.12221"><img src="images/projects/images-that-sound.jpg" alt="" style="width: 100%;  border-radius: 10px;"></a>
+            <div class="row pub-entry pub-selected" name="images-that-sound"> 
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2405.12221"><img src="images/projects/images-that-sound.jpg" alt="Images that Sound composition examples" loading="lazy" decoding="async" style="width: 100%;  border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                             <p>
@@ -450,17 +488,16 @@
                                 &nbsp;&middot;&nbsp;
                                 <a href="https://github.com/IFICL/images-that-sound">code</a>
                                 &nbsp;&middot;&nbsp;
-                                <a href="https://ificl.github.io/images-that-sound/#BibTeX" target="_blank">bibtex</a>
+                                <a href="https://ificl.github.io/images-that-sound/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                             </p>
                     </div>
                 </div>
             </div>
 
-            <div class="row" name="real-acoustic-fields" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style=" visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2403.18821"><img src="images/projects/RAF.jpg" alt="" style="width: 100%;  border-radius: 10px;"></a>
+            <div class="row pub-entry pub-selected" name="real-acoustic-fields">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2403.18821"><img src="images/projects/RAF.jpg" alt="Real Acoustic Fields capture setup" loading="lazy" decoding="async" style="width: 100%;  border-radius: 10px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -483,18 +520,17 @@
                                         &nbsp;&middot;&nbsp;
                                         <a href="https://github.com/facebookresearch/real-acoustic-fields/">dataset</a>
                                         &nbsp;&middot;&nbsp;
-                                        <a href="https://facebookresearch.github.io/real-acoustic-fields/#BibTeX" target="_blank">bibtex</a>
+                                        <a href="https://facebookresearch.github.io/real-acoustic-fields/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                         </p>
                     </div>
                 </div>
             </div>
 
 
-            <div class="row" name="UniTouch" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms" 
-                style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2401.18084"><img src="images/projects/unitouch.jpg" alt="" style="width: 100%;"></a>
+            <div class="row pub-entry pub-selected" name="UniTouch">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2401.18084"><img src="images/projects/unitouch.jpg" alt="UniTouch multimodal tactile representation overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -516,7 +552,7 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://github.com/cfeng16/UniTouch">code</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://cfeng16.github.io/UniTouch/#BibTeX" target="_blank">bibtex</a>
+                            <a href="https://cfeng16.github.io/UniTouch/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                         </p>
                     </div>
                 </div>
@@ -526,11 +562,10 @@
             
             
 
-            <div class="row" name="SLfM" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2303.11329"><img src="images/projects/SLfM.jpg" alt="" style="width: 80%;"></a>
+            <div class="row pub-entry pub-selected" name="SLfM">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2303.11329"><img src="images/projects/SLfM.jpg" alt="Sound Localization from Motion overview" loading="lazy" decoding="async" style="width: 80%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -546,18 +581,17 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://github.com/IFICL/SLfM">code</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://ificl.github.io/SLfM/#BibTeX" target="_blank">bibtex</a>
+                            <a href="https://ificl.github.io/SLfM/#BibTeX" target="_blank" rel="noopener noreferrer">bibtex</a>
                             <br>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="row" name="condfoleygen" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2304.08490"><img src="images/projects/condfoleygen.jpg" alt="" style="width: 100%; margin-top: 5px;"></a>
+            <div class="row pub-entry" name="condfoleygen">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2304.08490"><img src="images/projects/condfoleygen.jpg" alt="Conditional Foley generation examples" loading="lazy" decoding="async" style="width: 100%; margin-top: 5px;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -581,11 +615,10 @@
             </div>
 
 
-            <div class="row" name="avforensics" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2301.01767"><img src="images/projects/avforensics.jpg" alt="" style="width: 60%;"></a>
+            <div class="row pub-entry" name="avforensics">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2301.01767"><img src="images/projects/avforensics.jpg" alt="Audio-visual anomaly detection overview" loading="lazy" decoding="async" style="width: 60%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -608,11 +641,10 @@
             </div>
 
 
-            <div class="row" name="stereocrw" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2204.12489"><img src="images/projects/stereocrw.jpg" alt="" style="width: 100%;"></a>
+            <div class="row pub-entry" name="stereocrw">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2204.12489"><img src="images/projects/stereocrw.jpg" alt="Stereo sound localization method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -639,11 +671,10 @@
             </div>
 
 
-            <div class="row" name="mix-and-localize" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2211.15058"><img src="images/projects/mixcrw.jpg" alt="" style="width: 100%;"></a>
+            <div class="row pub-entry" name="mix-and-localize">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2211.15058"><img src="images/projects/mixcrw.jpg" alt="Mix and Localize method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -668,11 +699,10 @@
             </div>
 
             
-            <div class="row" name="structure-from-silence" style="margin-bottom: 20px;">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms"
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
-                    <div class="col-md-5 col-sm-5" align="center">
-                        <a href="https://arxiv.org/abs/2111.05846"><img src="images/projects/sfs.jpg" alt="" style="width: 100%;"></a>
+            <div class="row pub-entry pub-selected" name="structure-from-silence">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://arxiv.org/abs/2111.05846"><img src="images/projects/sfs.jpg" alt="Structure from Silence method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <p>
@@ -699,50 +729,64 @@
         
         </div>
     </section>
-    <br>
-    <hr>
 
-    <section id="Profession" style="padding-top: 40px; margin-top: -60px;">
+    <section id="Profession" class="site-section">
         <div class="container">
             <div class="row">
-                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms
-                    style="visibility: hidden; animation-duration: 400ms; animation-delay: 0.0s; animation-name: none;">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <h2>
                         Profession
                     </h2>
 
-                    <h4>Workshop Organizer:</h4>
-                    <ul>
-                        <li>ICCV 2025 Workshop: <a href="https://gen4avc.github.io/">Generative AI for Audio-Visual Content Creation</a> (Co-organizer)</li>
-                        <li>CVPR 2025 Workshop: <a href="https://sightsound.org/">Sight and Sound</a> (Co-organizer)</li>
-                        <li>CVPR 2024 Workshop: <a href=https://sightsound.org/2024/>Sight and Sound</a> (Co-organizer)</li>
-                    </ul>
+                    <div class="profession-list">
+                        <section class="profession-group" aria-labelledby="profession-workshops">
+                            <h3 class="profession-label" id="profession-workshops">Workshop Organizer</h3>
+                            <ul class="profession-entries">
+                                <li>
+                                    <a class="profession-title" href="https://gen4avc.github.io/">Generative AI for Audio-Visual Content Creation</a>
+                                    <span class="profession-meta">ICCV 2025 · ECCV 2026</span>
+                                </li>
+                                <li>
+                                    <a class="profession-title" href="https://sightsound.org/">Sight and Sound</a>
+                                    <span class="profession-meta">CVPR 2024 · CVPR 2025 · CVPR 2026</span>
+                                </li>
+                            </ul>
+                        </section>
 
-                    <h4>Reviewer:</h4>
-                    <ul>
-                        <li>
-                            Conference: WACV 2023, CVPR 2023, ICCV 2023, CVPR 2024, SIGGRAPH 2024, ECCV 2024, NeurIPS 2024, CVPR 2025, ICCV 2025
-                        </li>
-                        <li>
-                            Journal: IJCV
-                        </li>
-                    </ul>
-                    <br>
+                        <section class="profession-group" aria-labelledby="profession-reviewing">
+                            <h3 class="profession-label" id="profession-reviewing">Reviewer</h3>
+                            <ul class="profession-entries profession-reviewing">
+                                <li>
+                                    <span class="profession-key">Conferences</span>
+                                    <span><strong>CVPR</strong> (2023&ndash;2026), <strong>ICCV</strong> (2023, 2025), <strong>ECCV</strong> (2024), <strong>NeurIPS</strong> (2024), <strong>SIGGRAPH</strong> (2024), <strong>WACV</strong> (2023)</span>
+                                </li>
+                                <li>
+                                    <span class="profession-key">Journals</span>
+                                    <span><strong>IJCV</strong></span>
+                                </li>
+                            </ul>
+                        </section>
 
-                    <h4>Teaching Assistant:</h4>
-                    <ul>
-                        <li>VE312 Digital Integrated Circuits, Fall 2018, UM-SJTU Joint Institute. With <a
-                                href="https://www.ji.sjtu.edu.cn/about/faculty-staff/faculty-directory/faculty-detail/86/">Yaping
-                                Dan</a>.</li>
-                        <li>VE311 Electronic Circuits, Summer 2019, UM-SJTU Joint Institute. With <a
-                                href="https://www.ji.sjtu.edu.cn/about/faculty-staff/faculty-directory/faculty-detail/126/">Chang-Ching
-                                Tu</a>.</li>
-                    </ul>
+                        <section class="profession-group" aria-labelledby="profession-teaching">
+                            <h3 class="profession-label" id="profession-teaching">Teaching Assistant</h3>
+                            <ul class="profession-entries">
+                                <li>
+                                    <span class="profession-title">VE312 · Digital Integrated Circuits</span>
+                                    <span class="profession-meta">Fall 2018 · UM–SJTU Joint Institute · With <a href="https://www.ji.sjtu.edu.cn/about/faculty-staff/faculty-directory/faculty-detail/86/">Yaping Dan</a></span>
+                                </li>
+                                <li>
+                                    <span class="profession-title">VE311 · Electronic Circuits</span>
+                                    <span class="profession-meta">Summer 2019 · UM–SJTU Joint Institute · With <a href="https://www.ji.sjtu.edu.cn/about/faculty-staff/faculty-directory/faculty-detail/126/">Chang-Ching Tu</a></span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
+
+    </main>
 
         <!--
             ==================================================
@@ -768,11 +812,82 @@
         <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
-                        <p class="copyright">Copyright © 2025 @ Ziyang Chen ---- Thanks my friends <a href="https://jinlinyi.github.io/">Linyi Jin</a> and <a href="https://jasonqsy.github.io/">Shengyi Qian</a> for their website templates. <br>
-                        <a href="https://www.flaticon.com/free-icons/new" title="new icons">New icons created by Pixel perfect - Flaticon</a></p>
+                        <p class="copyright">Copyright © 2026 @ Ziyang Chen ---- Thanks my friends <a href="https://jinlinyi.github.io/">Linyi Jin</a> and <a href="https://jasonqsy.github.io/">Shengyi Qian</a> for their website templates.
+                        <!-- <br>
+                        <a href="https://www.flaticon.com/free-icons/new" title="new icons">New icons created by Pixel perfect - Flaticon</a> --></p>
                     </div>
                 </div>
         </footer>
+
+    <script>
+        (function () {
+            var links = document.querySelectorAll('.topic-link');
+            links.forEach(function (link) {
+                var topic = link.getAttribute('data-topic');
+                var pill = document.querySelector('.keyword-pill[data-topic="' + topic + '"]');
+                if (!pill) return;
+                function activate() { pill.classList.add('pill-active'); link.classList.add('topic-active'); }
+                function deactivate() { pill.classList.remove('pill-active'); link.classList.remove('topic-active'); }
+                link.addEventListener('mouseenter', activate);
+                link.addEventListener('mouseleave', deactivate);
+                pill.addEventListener('mouseenter', activate);
+                pill.addEventListener('mouseleave', deactivate);
+            });
+        })();
+
+        (function () {
+            var section = document.getElementById('Publication');
+            if (!section) return;
+            var btns = section.querySelectorAll('.pub-toggle-btn');
+            btns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var showSelected = btn.getAttribute('data-filter') === 'selected';
+                    section.classList.toggle('filter-selected', showSelected);
+                    btns.forEach(function (b) {
+                        var active = b === btn;
+                        b.classList.toggle('active', active);
+                        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+                    });
+                    if (!showSelected) {
+                        section.querySelectorAll('.pub-entry .block.wow').forEach(function (b) {
+                            b.style.visibility = 'visible';
+                            b.style.animationName = 'none';
+                        });
+                    }
+                });
+            });
+        })();
+
+        (function () {
+            var tabs = Array.prototype.slice.call(document.querySelectorAll('.work-tab'));
+            var panels = document.querySelectorAll('.work-panel');
+            if (!tabs.length) return;
+            function select(idx) {
+                tabs.forEach(function (t) {
+                    var on = t.getAttribute('data-i') === String(idx);
+                    t.classList.toggle('active', on);
+                    t.setAttribute('aria-selected', on ? 'true' : 'false');
+                    t.setAttribute('tabindex', on ? '0' : '-1');
+                });
+                panels.forEach(function (p) {
+                    var on = p.getAttribute('data-i') === String(idx);
+                    p.classList.toggle('active', on);
+                    p.hidden = !on;
+                });
+            }
+            tabs.forEach(function (tab, i) {
+                tab.addEventListener('click', function () { select(tab.getAttribute('data-i')); });
+                tab.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft' || e.key === 'Home' || e.key === 'End') {
+                        e.preventDefault();
+                        var next = e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : e.key === 'ArrowRight' ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
+                        tabs[next].focus();
+                        select(tabs[next].getAttribute('data-i'));
+                    }
+                });
+            });
+        })();
+    </script>
 
 </body>
 
