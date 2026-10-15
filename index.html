@@ -73,7 +73,7 @@
                             <a href="#Work">Work</a>
                         </li>
                         <li>
-                            <a href="#Publication">Publication</a>
+                            <a href="#Projects">Projects</a>
                         </li>
                         <li>
                             <a href="#Profession">Profession</a>
@@ -99,7 +99,7 @@
                 <div class="col-md-7 col-sm-7 about-copy-column">
                     <div class="block about-intro wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                         <h1 class="about-heading">About</h1>
-                        <p>I am a <span class="about-role-emphasis">Research Scientist Lead</span> at <a href="https://lumalabs.ai/">Luma AI</a>, working on multimodal foundation models.</p>
+                        <p>I am a <span class="about-role-emphasis">Research Lead</span> at <a href="https://lumalabs.ai/">Luma AI</a>, working on multimodal foundation models.</p>
                         <div class="about-bio">
                             <p>I received my Ph.D. in Computer Vision from <a href="https://umich.edu/">the University of Michigan</a>, advised by Prof. <a href="http://andrewowens.com/">Andrew Owens</a>. Before that, I earned my Master's degree at Michigan and my Bachelor's degree from <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
                             <p>During my Ph.D., I interned with the Codec Avatars Lab at <a href="https://about.meta.com/realitylabs/">Meta</a> and the SODA Group at <a href="https://research.adobe.com/">Adobe Research</a>. I also collaborated with Prof. <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a> and Prof. <a href="https://vision.cs.yale.edu/members/alex-wong.html">Alex Wong</a>.</p>
@@ -193,7 +193,7 @@
                     </h2>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="work-tabs" role="tablist" aria-label="Employers">
@@ -217,7 +217,7 @@
                         <div class="work-panel active" role="tabpanel" id="work-luma" aria-labelledby="tab-luma" data-i="0">
                             <div class="work-panel-header">
                                 <div>
-                                    <p class="work-eyebrow">Industry · Multimodal AI</p>
+                                    <p class="work-eyebrow">Full-time · Multimodal AI</p>
                                     <div class="work-company-line">
                                         <h3 class="work-company"><a href="https://lumalabs.ai/">Luma AI</a></h3>
                                         <p class="work-location">Redwood City, CA</p>
@@ -228,7 +228,7 @@
                             <div class="work-panel-body">
                                 <div class="work-role-list" aria-label="Roles at Luma AI">
                                     <div class="role-line current-role">
-                                        <span class="job-title">Research Scientist Lead</span>
+                                        <span class="job-title">Research Lead</span>
                                         <span class="role-date">Jan. 2026 — Present</span>
                                     </div>
                                     <div class="role-line">
@@ -237,12 +237,8 @@
                                     </div>
                                 </div>
                                 <div class="work-info-block">
-                                    <p class="work-label">Selected work</p>
-                                    <ul class="work-project-list">
-                                        <li><a href="https://lumalabs.ai/news/ray3_14">Ray3.14</a><span>Fast video generation through distillation</span></li>
-                                        <li><a href="https://lumalabs.ai/uni-1">Uni-1</a><span>Unified multimodal reasoning and pixel generation</span></li>
-                                        <li><strong>Generative media</strong><span>Speech-to-video and joint audio-video generation</span></li>
-                                    </ul>
+                                    <p class="work-label">Focus</p>
+                                    <p class="work-detail">Multimodal foundation models for image, video, and audio generation.</p>
                                 </div>
                             </div>
                         </div>
@@ -312,29 +308,75 @@
         </div>
     </section>
 
-
-    <!-- Publications: selected work by default, with an all-publications view -->
-    <section id="Publication" class="site-section filter-selected">
+    <!-- Projects: featured products and publications, with a complete archive view -->
+    <section id="Projects" class="site-section filter-selected">
         <div class="container">
             <div class="row">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
-                    <div class="pub-header">
-                        <h2>Publication</h2>
-                        <div class="pub-toggle" role="group" aria-label="Filter publications">
-                            <button type="button" class="pub-toggle-btn active" data-filter="selected" aria-pressed="true">Selected</button>
-                            <button type="button" class="pub-toggle-btn" data-filter="all" aria-pressed="false">All</button>
+                    <div class="project-header">
+                        <h2>Projects</h2>
+                        <div class="project-toggle" role="group" aria-label="Filter projects">
+                            <button type="button" class="project-toggle-btn active" data-filter="selected" aria-pressed="true">Selected</button>
+                            <button type="button" class="project-toggle-btn" data-filter="all" aria-pressed="false">All</button>
                         </div>
                     </div>
-                    <p class="pub-note">* Equal contribution</p>
+                    <p class="project-note">* Equal contribution</p>
                 </div>
             </div>
 
-            <div class="row pub-entry pub-selected" name="phd-dissertation">
+            <div class="row project-entry project-selected" id="uni-1">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://lumalabs.ai/uni-1" aria-label="View the Uni-1 product page">
+                            <div class="project-teaser-placeholder project-product-teaser project-product-teaser-uni" aria-hidden="true">
+                                <span class="project-placeholder-kicker">Uni-1</span>
+                                <span class="project-product-type">Unified Intelligence</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <p>
+                            <span class="project-project-eyebrow">Luma AI · Multimodal image model</span>
+                            <span class="mybold">Uni-1</span><br>
+                            A unified multimodal model that combines reasoning and pixel generation for highly controlled image creation and editing.
+
+                            <br>
+                            <a href="https://lumalabs.ai/uni-1">product page</a>
+                            &nbsp;&middot;&nbsp;
+                            <a href="https://lumalabs.ai/learning-center/articles/uni-1-complete-guide">guide</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row project-entry project-selected" id="ray-3-14">
+                <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
+                    <div class="col-md-5 col-sm-5 text-center">
+                        <a href="https://lumalabs.ai/news/ray3_14" aria-label="View the Ray3.14 announcement">
+                            <div class="project-teaser-placeholder project-product-teaser project-product-teaser-ray" aria-hidden="true">
+                                <span class="project-placeholder-kicker">Ray3.14</span>
+                                <span class="project-product-type">Distilled Video Generation</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <p>
+                            <span class="project-project-eyebrow">Luma AI · Generative video model</span>
+                            <span class="mybold">Ray3.14</span><br>
+                            A distilled Ray model built for fast video generation while retaining strong visual quality and motion.
+                            <br>
+                            <a href="https://lumalabs.ai/news/ray3_14">announcement</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row project-entry project-selected" id="phd-dissertation">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://deepblue.lib.umich.edu/items/5612135b-61cb-47e1-9ab4-3c3dda3f605b" aria-label="View the dissertation Connecting Sight and Sound through Space, Time and Language">
-                            <div class="pub-teaser-placeholder" aria-hidden="true">
-                                <span class="pub-placeholder-kicker">Ph.D. Dissertation</span>
+                            <div class="project-teaser-placeholder" aria-hidden="true">
+                                <span class="project-placeholder-kicker">Ph.D. Dissertation</span>
                             </div>
                         </a>
                     </div>
@@ -350,8 +392,8 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row pub-entry pub-selected" name="multifoley">
+
+            <div class="row project-entry project-selected" id="multifoley">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2411.17698"><img src="images/projects/multifoley.jpg" alt="MultiFoley video-guided sound generation overview" loading="lazy" decoding="async"
@@ -360,7 +402,7 @@
                     <div class="col-md-7 col-sm-7">
                         <p>
                             <span class="mybold">Video-Guided Foley Sound Generation with Multimodal Controls</span><br>
-            
+
                             Ziyang Chen,
                             <a href="https://pseeth.github.io/">Prem Seetharaman</a>,
                             <a href="https://bryanrussell.org/">Bryan Russell</a>,
@@ -382,7 +424,7 @@
             </div>
 
 
-            <div class="row pub-entry" name="GPS-Gen">
+            <div class="row project-entry" id="GPS-Gen">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://cfeng16.github.io/gps-gen/"><img src="images/projects/gpsgen.jpg" alt="GPS-controlled image generation overview" loading="lazy" decoding="async" style="width: 95%;"></a>
@@ -390,7 +432,7 @@
                     <div class="col-md-7 col-sm-7">
                         <p>
                             <span class="mybold">GPS as a Control Signal for Image Generation</span><br>
-        
+
                             <a href="https://cfeng16.github.io/">Chao Feng</a>,
                             Ziyang Chen,
                             <a href="https://holynski.org/">Aleksander Holynski</a>,
@@ -412,7 +454,7 @@
                 </div>
             </div>
 
-            <div class="row pub-entry" name="Ego-Spatial">
+            <div class="row project-entry" id="Ego-Spatial">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Min_Supervising_Sound_Localization_by_In-the-wild_Egomotion_CVPR_2025_paper.pdf"><img src="images/projects/sup-egomotion.jpg" alt="Egomotion-supervised sound localization overview" loading="lazy" decoding="async" style="width: 95%; border-radius: 10px;"></a>
@@ -421,7 +463,7 @@
                         <p>
                             <span class="mybold">Supervising Sound Localization Using In-the-wild Ego-motion</span>
                             <br>
-            
+
                             <a href="https://www.linkedin.com/in/anna-min-a69963263/">Anna Min</a>,
                             Ziyang Chen,
                             <a href="https://hangzhaomit.github.io/">Hang Zhao</a>,
@@ -429,14 +471,14 @@
                             <br>
                             CVPR 2025 (<span style="color:#a00"><b>Highlight</b></span>)
                             <br>
-  
+
                             <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Min_Supervising_Sound_Localization_by_In-the-wild_Egomotion_CVPR_2025_paper.pdf">paper</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="row pub-entry pub-selected" name="images-that-sound"> 
+            <div class="row project-entry project-selected" id="images-that-sound">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2405.12221"><img src="images/projects/images-that-sound.jpg" alt="Images that Sound composition examples" loading="lazy" decoding="async" style="width: 100%;  border-radius: 10px;"></a>
@@ -445,12 +487,12 @@
                             <p>
                                 <span class="mybold">
                                     Images that Sound: Composing Images and Sounds on a Single Canvas</span><br>
-            
+
                                 Ziyang Chen,
                                 <a href="https://dangeng.github.io/">Daniel Geng</a>,
                                 <a href="http://andrewowens.com/">Andrew Owens</a>
                                 <br>
-                                NeurIPS 2024 
+                                NeurIPS 2024
                                 <br>
                                 <a href="https://thecvf-art.com/project/images-that-sound/">CVPR 2024 AI Art Gallery</a>
                                 <br>
@@ -466,7 +508,7 @@
                 </div>
             </div>
 
-            <div class="row pub-entry pub-selected" name="real-acoustic-fields">
+            <div class="row project-entry project-selected" id="real-acoustic-fields">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2403.18821"><img src="images/projects/RAF.jpg" alt="Real Acoustic Fields capture setup" loading="lazy" decoding="async" style="width: 100%;  border-radius: 10px;"></a>
@@ -475,7 +517,7 @@
                         <p>
                             <span class="mybold">
                                 Real Acoustic Fields: An Audio-Visual Room Acoustics Dataset and Benchmark</span><br>
-        
+
                             Ziyang Chen,
                             <a href="https://scholar.google.it/citations?user=5RFgT84AAAAJ&amp;hl=en">Israel D. Gebru</a>,
                             <a href="https://richardt.name/">Christian Richardt</a>,
@@ -499,7 +541,7 @@
             </div>
 
 
-            <div class="row pub-entry pub-selected" name="UniTouch">
+            <div class="row project-entry project-selected" id="UniTouch">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2401.18084"><img src="images/projects/unitouch.jpg" alt="UniTouch multimodal tactile representation overview" loading="lazy" decoding="async" style="width: 100%;"></a>
@@ -508,7 +550,7 @@
                         <p>
                             <span class="mybold"> Binding Touch to
                                 Everything: Learning Unified Multimodal Tactile Representations </span><br>
-        
+
                             <a href="https://fredfyyang.github.io/">Fengyu Yang</a>*,
                             <a href="https://cfeng16.github.io/">Chao Feng</a>*,
                             Ziyang Chen*,
@@ -530,11 +572,11 @@
                 </div>
             </div>
 
-            
-            
-            
 
-            <div class="row pub-entry pub-selected" name="SLfM">
+
+
+
+            <div class="row project-entry project-selected" id="SLfM">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2303.11329"><img src="images/projects/SLfM.jpg" alt="Sound Localization from Motion overview" loading="lazy" decoding="async" style="width: 80%;"></a>
@@ -542,7 +584,7 @@
                     <div class="col-md-7 col-sm-7">
                         <p>
                             <span class="mybold"> Sound Localization from Motion: Jointly Learning Sound Direction and Camera Rotation</span><br>
-                            
+
                             Ziyang Chen, <a href="https://jasonqsy.github.io/">Shengyi Qian</a>, <a
                                 href="http://andrewowens.com/">Andrew Owens</a><br>
                             ICCV 2023
@@ -560,7 +602,7 @@
                 </div>
             </div>
 
-            <div class="row pub-entry" name="condfoleygen">
+            <div class="row project-entry" id="condfoleygen">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2304.08490"><img src="images/projects/condfoleygen.jpg" alt="Conditional Foley generation examples" loading="lazy" decoding="async" style="width: 100%; margin-top: 5px;"></a>
@@ -570,7 +612,7 @@
                             <span class="mybold">Conditional Generation of Audio from Video via Foley Analogies</span><br>
 
                             <a href="https://xypb.github.io/">Yuexi Du</a>, Ziyang Chen, <a href="https://www.justinsalamon.com/">Justin Salamon</a>, <a href="https://bryanrussell.org/">Bryan Russell</a>, <a href="http://andrewowens.com/">Andrew Owens</a><br>
-                            
+
                             CVPR 2023
                             <br>
                             <a href="https://xypb.github.io/CondFoleyGen/">project page</a>
@@ -587,7 +629,7 @@
             </div>
 
 
-            <div class="row pub-entry" name="avforensics">
+            <div class="row project-entry" id="avforensics">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2301.01767"><img src="images/projects/avforensics.jpg" alt="Audio-visual anomaly detection overview" loading="lazy" decoding="async" style="width: 60%;"></a>
@@ -613,7 +655,7 @@
             </div>
 
 
-            <div class="row pub-entry" name="stereocrw">
+            <div class="row project-entry" id="stereocrw">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2204.12489"><img src="images/projects/stereocrw.jpg" alt="Stereo sound localization method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
@@ -621,10 +663,10 @@
                     <div class="col-md-7 col-sm-7">
                         <p>
                             <span class="mybold">Sound Localization by Self-Supervised Time Delay Estimation</span><br>
-                            
+
                             Ziyang Chen, <a href="https://web.eecs.umich.edu/~fouhey/">David F. Fouhey</a>, <a
                                 href="http://andrewowens.com/">Andrew Owens</a><br>
-                            
+
                             ECCV 2022
                             <br>
                             <a href="https://ificl.github.io/stereocrw/">project page</a>
@@ -643,7 +685,7 @@
             </div>
 
 
-            <div class="row pub-entry" name="mix-and-localize">
+            <div class="row project-entry" id="mix-and-localize">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2211.15058"><img src="images/projects/mixcrw.jpg" alt="Mix and Localize method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
@@ -653,7 +695,7 @@
                             <span class="mybold">Mix and Localize: Localizing Sound Sources in Mixtures</span><br>
                             <a href="https://hxixixh.github.io/">Xixi Hu</a>*, Ziyang Chen*, <a
                                 href="http://andrewowens.com/">Andrew Owens</a><br>
-                            
+
                             CVPR 2022
                             <br>
                             <a href="https://hxixixh.github.io/mix-and-localize/">project page</a>
@@ -670,8 +712,8 @@
                 </div>
             </div>
 
-            
-            <div class="row pub-entry pub-selected" name="structure-from-silence">
+
+            <div class="row project-entry project-selected" id="structure-from-silence">
                 <div class="block wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="400ms">
                     <div class="col-md-5 col-sm-5 text-center">
                         <a href="https://arxiv.org/abs/2111.05846"><img src="images/projects/sfs.jpg" alt="Structure from Silence method overview" loading="lazy" decoding="async" style="width: 100%;"></a>
@@ -681,7 +723,7 @@
                             <span class="mybold">Structure from Silence: Learning Scene Structure from Ambient Sound</span>
                             <br>
                             Ziyang Chen*, <a href="https://hxixixh.github.io/">Xixi Hu</a>*, <a href="http://andrewowens.com/">Andrew Owens</a><br>
-                            
+
                             CoRL 2021 (<span style="color:#a00"><b>Oral</b></span>)
                             <br>
                             <a href="https://ificl.github.io/structure-from-silence/">project page</a>
@@ -692,13 +734,13 @@
                             &nbsp;&middot;&nbsp;
                             <a href="https://github.com/IFICL/structure-from-silence">code</a>
                             &nbsp;&middot;&nbsp;
-                            <a href="https://ificl.github.io/structure-from-silence/docs/bibtex.txt">bibtex</a> 
+                            <a href="https://ificl.github.io/structure-from-silence/docs/bibtex.txt">bibtex</a>
                             <br>
                         </p>
                     </div>
                 </div>
             </div>
-        
+
         </div>
     </section>
 

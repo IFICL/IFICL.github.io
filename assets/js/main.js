@@ -2,7 +2,16 @@ jQuery(function () {
     "use strict";
 
     // Reveal page sections as they enter the viewport.
-    new WOW().init();
+    if (typeof WOW === 'function') {
+        try {
+            new WOW().init();
+        } catch (error) {
+            document.querySelectorAll('.wow').forEach(function (element) {
+                element.style.visibility = 'visible';
+            });
+            console.warn('Section animations could not initialize.', error);
+        }
+    }
 
     // Close the collapsed mobile menu after navigating to a section.
     jQuery('#main-navigation a[href^="#"]').on('click', function () {
@@ -12,9 +21,24 @@ jQuery(function () {
     });
 
     initResearchTopicHighlights();
-    initPublicationFilter();
+    initProjectFilter();
     initWorkTabs();
+    initLegacyProjectAnchor();
 });
+
+// Keep links to the former Publication section working.
+function initLegacyProjectAnchor() {
+    function redirectLegacyAnchor() {
+        if (window.location.hash !== '#Publication') return;
+        var section = document.getElementById('Projects');
+        if (!section) return;
+        window.history.replaceState(null, '', '#Projects');
+        section.scrollIntoView();
+    }
+
+    redirectLegacyAnchor();
+    window.addEventListener('hashchange', redirectLegacyAnchor);
+}
 
 // Highlight the matching research image label when a topic is hovered.
 function initResearchTopicHighlights() {
@@ -42,12 +66,12 @@ function initResearchTopicHighlights() {
     });
 }
 
-// Switch the publication list between selected entries and the full archive.
-function initPublicationFilter() {
-    var section = document.getElementById('Publication');
+// Switch the project list between selected entries and the full archive.
+function initProjectFilter() {
+    var section = document.getElementById('Projects');
     if (!section) return;
 
-    var buttons = section.querySelectorAll('.pub-toggle-btn');
+    var buttons = section.querySelectorAll('.project-toggle-btn');
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
             var showSelected = button.getAttribute('data-filter') === 'selected';
@@ -61,7 +85,7 @@ function initPublicationFilter() {
 
             // WOW may leave initially hidden entries invisible after filtering.
             if (!showSelected) {
-                section.querySelectorAll('.pub-entry .block.wow').forEach(function (entry) {
+                section.querySelectorAll('.project-entry .block.wow').forEach(function (entry) {
                     entry.style.visibility = 'visible';
                     entry.style.animationName = 'none';
                 });
