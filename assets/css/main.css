@@ -1746,7 +1746,7 @@ ul.social-icons li {
   max-width: 100px;
 }
 
-/* Work Experience: tabbed employers (circular logo tabs -> detail panel) */
+/* Work Experience: employer timeline and tab panels */
 .work-tabs {
   max-width: 100%;
   margin-bottom: 12px;
@@ -1760,11 +1760,13 @@ ul.social-icons li {
 }
 
 .work-tabs-track {
+  --work-node-size: 100px;
+  --work-node-gap: 32px;
   display: flex;
   justify-content: center;
   width: max-content;
   min-width: 100%;
-  gap: 56px;
+  gap: var(--work-node-gap);
   padding: 8px 10px 7px;
 }
 
@@ -1782,13 +1784,13 @@ ul.social-icons li {
 }
 
 .work-tab {
-  flex: 0 0 auto;
+  position: relative;
+  flex: 0 0 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 12px;
-  padding: 4px;
+  padding: 4px 4px 44px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1798,6 +1800,48 @@ ul.social-icons li {
   appearance: none;
 }
 
+/* Connect each node to the previous one, ending at the outer node centers. */
+.work-tab + .work-tab::before {
+  position: absolute;
+  bottom: 28px;
+  right: 50%;
+  width: calc(100% + var(--work-node-gap));
+  height: 2px;
+  background: #c8d5dd;
+  pointer-events: none;
+  content: "";
+}
+
+.work-tab::after {
+  position: absolute;
+  z-index: 1;
+  right: 50%;
+  bottom: 23px;
+  width: 12px;
+  height: 12px;
+  transform: translateX(50%);
+  border: 2px solid #8299a9;
+  border-radius: 50%;
+  background: #fff;
+  pointer-events: none;
+  content: "";
+}
+
+.work-tab.active::after {
+  border-color: var(--work-accent, #00a4ba);
+  background: var(--work-accent, #00a4ba);
+}
+
+.work-timeline-label {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  color: #607585;
+  font-size: 11px;
+  line-height: 16px;
+}
+
 .work-tab:focus-visible {
   border-radius: 8px;
   outline: 2px solid #00a4ba;
@@ -1805,38 +1849,55 @@ ul.social-icons li {
 }
 
 .work-tab img {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
+  position: relative;
+  z-index: 1;
+  width: var(--work-node-size);
+  height: var(--work-node-size);
+  max-width: var(--work-node-size);
   border-radius: 50%;
   object-fit: contain;
   background: #fff;
   padding: 16px;
-  border: 1px solid rgba(0, 49, 87, 0.15);
+  border: 2px solid rgba(0, 49, 87, 0.15);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.18s ease, transform 0.18s ease;
 }
 
-.work-tab span {
+.work-tab-name {
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
   color: rgba(0, 49, 87, 0.8);
-  transition: color 0.2s ease;
+  transition: color 0.18s ease;
 }
 
-.work-tab:hover img {
-  border-color: #00a4ba;
-  transform: translateY(-3px);
+/* Share each employer's accent between its timeline node and detail panel. */
+#tab-deepmind, #work-deepmind { --work-accent: #2563c9; }
+#tab-luma, #work-luma { --work-accent: #383838; }
+#tab-adobe, #work-adobe { --work-accent: #ce241a; }
+#tab-meta, #work-meta { --work-accent: #48596a; }
+
+@media (hover: hover) {
+  .work-tab:hover {
+    --work-logo-lift: -3px;
+  }
+
+  .work-tab:hover img {
+    border-color: var(--work-accent, #00a4ba);
+    transform: translateY(var(--work-logo-lift));
+  }
 }
 
 .work-tab.active img {
-  border: 2px solid #00a4ba;
-  box-shadow: 0 6px 16px rgba(0, 164, 186, 0.28);
+  border-color: var(--work-accent, #00a4ba);
+  box-shadow: 0 0 8px 1px rgba(0, 49, 87, 0.08);
+  box-shadow: 0 0 8px 1px color-mix(in srgb, var(--work-accent, #00a4ba) 14%, transparent);
+  transform: translateY(var(--work-logo-lift, 0px)) scale(1.08);
 }
 
-.work-tab.active span {
-  color: #00a4ba;
+.work-tab.active .work-tab-name {
+  color: var(--work-accent, #00a4ba);
 }
 
 .work-panels {
@@ -1850,7 +1911,7 @@ ul.social-icons li {
   box-shadow: 0 18px 50px rgba(0, 49, 87, 0.09);
 }
 
-.work-panels::before {
+.work-panel::before {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1858,16 +1919,27 @@ ul.social-icons li {
   left: 0;
   height: 4px;
   content: '';
-  background: linear-gradient(90deg, #003157 0%, #00a4ba 72%, #8bd9df 100%);
+  background: var(--work-accent, #00a4ba);
 }
 
 .work-panel {
+  position: relative;
   display: none;
 }
 
 .work-panel.active {
   display: block;
-  animation: workFade 0.25s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .work-panel.active {
+    animation: work-panel-fade-in 250ms ease;
+  }
+}
+
+@keyframes work-panel-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .work-panel-header {
@@ -2034,11 +2106,6 @@ ul.social-icons li {
   gap: 2px 14px;
 }
 
-@keyframes workFade {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: none; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -2053,30 +2120,33 @@ ul.social-icons li {
     transition-duration: 0.01ms !important;
   }
 
-  .work-tab img {
-    transition: none;
-  }
-
   .work-project-title a {
     transition: none;
   }
 
-  .work-panel.active {
-    animation: none;
+  .work-tab img,
+  .work-tab-name {
+    transition: none;
   }
+
+  .work-tab:hover {
+    --work-logo-lift: 0px;
+  }
+
 }
 
 @media (max-width: 767px) {
   .work-tabs-track {
-    gap: 22px;
+    --work-node-size: 72px;
+    --work-node-gap: 14px;
+  }
+  .work-tab {
+    flex-basis: 128px;
   }
   .work-tab img {
-    width: 72px;
-    height: 72px;
-    max-width: 72px;
     padding: 12px;
   }
-  .work-tab span {
+  .work-tab-name {
     font-size: 12px;
   }
   .work-panels {
