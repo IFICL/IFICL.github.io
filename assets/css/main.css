@@ -1479,6 +1479,7 @@ ul.social-icons li {
 /* Projects: consistent editorial rows with a restrained media frame */
 #Projects .project-entry {
   margin: 0;
+  scroll-margin-top: 51px;
 }
 
 #Projects .project-entry > .block {
