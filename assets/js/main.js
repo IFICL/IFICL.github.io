@@ -72,44 +72,58 @@ function initProjectFilter() {
     if (!section) return;
 
     var buttons = section.querySelectorAll('.project-toggle-btn');
+
+    function setFilter(filter) {
+        section.classList.toggle('filter-selected', filter === 'selected');
+        buttons.forEach(function (button) {
+            var isActive = button.getAttribute('data-filter') === filter;
+            button.classList.toggle('active', isActive);
+            button.setAttribute('aria-pressed', String(isActive));
+        });
+    }
+
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
-            var showSelected = button.getAttribute('data-filter') === 'selected';
-            section.classList.toggle('filter-selected', showSelected);
-
-            buttons.forEach(function (candidate) {
-                var isActive = candidate === button;
-                candidate.classList.toggle('active', isActive);
-                candidate.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-            });
-
-            // WOW may leave initially hidden entries invisible after filtering.
-            if (!showSelected) {
-                section.querySelectorAll('.project-entry .block.wow').forEach(function (entry) {
-                    entry.style.visibility = 'visible';
-                    entry.style.animationName = 'none';
-                });
-            }
+            setFilter(button.getAttribute('data-filter'));
         });
     });
+
+    function revealLinkedProject() {
+        var id;
+        try {
+            id = decodeURIComponent(window.location.hash.slice(1));
+        } catch (error) {
+            return;
+        }
+        var target = document.getElementById(id);
+        if (!target || !section.contains(target) || !target.classList.contains('project-entry')) return;
+
+        if (!target.classList.contains('project-selected')) setFilter('all');
+        target.scrollIntoView();
+    }
+
+    revealLinkedProject();
+    window.addEventListener('hashchange', revealLinkedProject);
 }
 
 // Coordinate the work-history tabs, panels, and keyboard navigation.
 function initWorkTabs() {
-    var tabs = Array.prototype.slice.call(document.querySelectorAll('.work-tab'));
-    var panels = document.querySelectorAll('.work-panel');
-    if (!tabs.length) return;
+    var work = document.getElementById('Work');
+    if (!work) return;
+    var tabs = Array.from(work.querySelectorAll('.work-tab'));
+    var panels = work.querySelectorAll('.work-panel');
 
-    function selectTab(index) {
+    function selectTab(selectedTab) {
+        var panelId = selectedTab.getAttribute('aria-controls');
         tabs.forEach(function (tab) {
-            var isActive = tab.getAttribute('data-i') === String(index);
+            var isActive = tab === selectedTab;
             tab.classList.toggle('active', isActive);
             tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
             tab.setAttribute('tabindex', isActive ? '0' : '-1');
         });
 
         panels.forEach(function (panel) {
-            var isActive = panel.getAttribute('data-i') === String(index);
+            var isActive = panel.id === panelId;
             panel.classList.toggle('active', isActive);
             panel.hidden = !isActive;
         });
@@ -117,7 +131,7 @@ function initWorkTabs() {
 
     tabs.forEach(function (tab, index) {
         tab.addEventListener('click', function () {
-            selectTab(tab.getAttribute('data-i'));
+            selectTab(tab);
         });
 
         tab.addEventListener('keydown', function (event) {
@@ -130,8 +144,8 @@ function initWorkTabs() {
                     : event.key === 'ArrowRight' ? (index + 1) % tabs.length
                         : (index - 1 + tabs.length) % tabs.length;
 
+            selectTab(tabs[nextIndex]);
             tabs[nextIndex].focus();
-            selectTab(tabs[nextIndex].getAttribute('data-i'));
         });
     });
 }
